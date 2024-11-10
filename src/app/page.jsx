@@ -9,9 +9,19 @@ import ImageSlider from './components/ImageSlider';
 export default function LandingPage() {
   return (
     <>  {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-8 sm:py-12 md:py-20">
-  <div className="container mx-auto px-4">
-    <div className="flex flex-col md:flex-row items-center md:gap-96 ">
+  <section className="relative bg-blue-600 text-white py-8 sm:py-12 md:py-20 overflow-hidden">
+  {/* Ripple Background Animation */}
+  <div className="ripple-background">
+    <div className="circle xxlarge shade1"></div>
+    <div className="circle xlarge shade2"></div>
+    <div className="circle large shade3"></div>
+    <div className="circle medium shade4"></div>
+    <div className="circle small shade5"></div>
+  </div>
+  
+  {/* Main Content */}
+  <div className="container relative z-10 mx-auto px-4">
+    <div className="flex flex-col md:flex-row items-center md:gap-96">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left">
           TechConf 2024
@@ -25,7 +35,7 @@ export default function LandingPage() {
           </Button>
         </div>
       </div>
-      <div className="w-full md:w-1/2   ">
+      <div className="w-full md:w-1/2">
         <ImageSlider />
       </div>
     </div>
