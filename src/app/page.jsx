@@ -7,6 +7,38 @@ import { ConferenceTimeline } from './components/conference-timeline';
 import ImageSlider from './components/ImageSlider';
 
 export default function LandingPage() {
+  const getSpeakersData = () => {
+    return [
+      {
+        id: 1,
+        name: "Kartik Mehta",
+        image: "/speakerimg/kartik.jpg?height=150&width=150",
+        role: "CEO at Company",
+      },
+      {
+        id: 2,
+        name: "Sahaj Jain",
+        image: "/speakerimg/sahaj.png?height=150&width=150",
+        role: "CTO at Organization",
+      },
+      {
+        id: 3,
+        name: "Alex Johnson",
+        image: "/speakerimg/sahaj.png?height=150&width=150",
+        role: "Lead Developer",
+      },
+      {
+        id: 4,
+        name: "Emily Davis",
+        image: "/speakerimg/sahaj.png?height=150&width=150",
+        role: "Marketing Head",
+      },
+    
+      // Add more speakers as needed
+    ];
+  };
+  
+
   return (
     <>  {/* Hero Section */}
   <section className="relative bg-blue-600 text-white py-8 sm:py-12 md:py-20 overflow-hidden">
@@ -74,28 +106,29 @@ export default function LandingPage() {
       </section>
 
       {/* Speakers Section */}
-      <section className="bg-gray-100 py-12 md:py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">Featured Speakers</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
-            {[1, 2, 3, 4].map((i) => (
-              <Card key={i}>
-                <CardContent className="p-4 md:p-6 text-center">
-                  <Image
-                    src={`/placeholder.svg?height=150&width=150`}
-                    alt={`Speaker ${i}`}
-                    width={150}
-                    height={150}
-                    className="rounded-full mx-auto mb-4 w-24 h-24 md:w-32 md:h-32"
-                  />
-                  <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">Speaker Name</h3>
-                  <p className="text-sm md:text-base text-gray-600">Role at Company</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+  <section className="bg-gray-100 py-12 md:py-20">
+  <div className="container mx-auto px-4">
+    <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">Featured Speakers</h2>
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+      {getSpeakersData().map((speaker) => (
+        <Card key={speaker.id}>
+          <CardContent className="p-4 md:p-6 text-center">
+            <Image
+              src={speaker.image}
+              alt={`Speaker ${speaker.id}`}
+              width={150}
+              height={150}
+              className="rounded-full mx-auto mb-4 w-24 h-24 md:w-32 md:h-32"
+            />
+            <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">{speaker.name}</h3>
+            <p className="text-sm md:text-base text-gray-600">{speaker.role}</p>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="bg-blue-600 text-white py-12 md:py-20">
