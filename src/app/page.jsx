@@ -112,7 +112,7 @@ export default function LandingPage() {
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
       {getSpeakersData().map((speaker) => (
         <Card key={speaker.id}>
-          <CardContent className="p-4 md:p-6 text-center">
+          <CardContent className="p-4 md:p-6 text-center hover:border border-blue-500 rounded-md">
             <Image
               src={speaker.image}
               alt={`Speaker ${speaker.id}`}
