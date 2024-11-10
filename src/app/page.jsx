@@ -4,32 +4,34 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from './layout';
 import { ConferenceTimeline } from './components/conference-timeline';
+import ImageSlider from './components/ImageSlider';
 
 export default function LandingPage() {
   return (
     <>  {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-12 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">TechConf 2024</h1>
-              <p className="text-lg md:text-xl mb-6">Join us for the most innovative tech conference of the year</p>
-              <Button size="lg" className="w-full md:w-auto bg-white text-blue-600 hover:bg-blue-100">
-                Register Now
-              </Button>
-            </div>
-            <div className="md:w-1/2">
-              <Image
-                src="/piet.jpeg?height=400&width=600"
-                alt="Conference"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-          </div>
+      <section className="bg-blue-600 text-white py-8 sm:py-12 md:py-20">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col md:flex-row items-center md:gap-96 ">
+      <div className="w-full md:w-1/2 mb-6 md:mb-0">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left">
+          TechConf 2024
+        </h1>
+        <p className="text-md sm:text-lg md:text-xl mb-6 text-center md:text-left">
+          Join us for the most innovative tech conference of the year
+        </p>
+        <div className="flex justify-center md:justify-start">
+          <Button size="lg" className="w-full md:w-auto bg-white text-blue-600 hover:bg-blue-100">
+            Register Now
+          </Button>
         </div>
-      </section>
+      </div>
+      <div className="w-full md:w-1/2   ">
+        <ImageSlider />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Conference Timeline Section */}
       <ConferenceTimeline />
