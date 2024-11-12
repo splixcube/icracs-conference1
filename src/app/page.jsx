@@ -107,27 +107,28 @@ export default function LandingPage() {
         </div>
       </section>
 
-{/* call for papers */}
+      {/* call for papers */}
 
-<CallForPaper />
+      <CallForPaper />
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-12 md:py-20">
+      <section className="bg-blue-600 text-white py-6 md:py-12">
         <div className="container mx-auto px-4 text-center flex flex-col items-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Join Us?</h2>
-          <p className="text-lg md:text-xl mb-4 md:mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">Ready to Join Us?</h2>
+          <p className="text-lg md:text-xl md:mb-4">
             Register now and be part of the most exciting tech event of the year!
           </p>
           <div className="w-full md:w-auto">
             <Button
               size="lg"
-              className="bg-white text-blue-600 w-full md:w-auto hover:bg-blue-100 px-6 py-3 rounded-lg transition duration-300 ease-in-out"
+              className="bg-white text-blue-600 w-full md:w-auto hover:bg-blue-100 px-6 py-3 rounded-lg transition duration-300 ease-in-out -mb-4"
             >
               Register for TechConf 2024
             </Button>
           </div>
         </div>
       </section>
+
 
     </>
   );
