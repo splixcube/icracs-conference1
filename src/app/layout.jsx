@@ -88,23 +88,24 @@ export default function RootLayout({ children }) {
       <main className="flex-grow">
         {children}
       </main>
-      <footer className="bg-blue-600 text-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold">International Conference on Recent Advances in Artificial intelligence, Computer Vision & Smart Systems (ICRACS)</h3>
-              <p>Exploring the Future of Technology</p>
-            </div>
-            <div className="flex space-x-4">
-              <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
-              <Link href="/terms" className="hover:underline">Terms of Service</Link>
-            </div>
-          </div>
-          <div className="mt-4 text-center">
-            <p>&copy; 2024 TechConf. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <footer className="bg-blue-600 text-white py-4">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="mb-4 md:mb-0">
+        <h3 className="text-xl font-bold">International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems (ICRACS)</h3>
+        <p>Exploring the Future of Technology</p>
+      </div>
+      <div className="flex space-x-4">
+        <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+        <Link href="/terms" className="hover:underline">Terms of Service</Link>
+      </div>
+    </div>
+    <div className="mt-4 text-center">
+      <p>&copy; 2024 TechConf. All rights reserved.</p>
+      <p className="mt-2">Developed by The Cyborgs</p>
+    </div>
+  </div>
+</footer>
     </div>
       </body>
     </html>
