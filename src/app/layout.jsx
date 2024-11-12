@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 
 export default function RootLayout({ children }) {
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
       <header className="bg-white shadow-sm">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
       <Link href="/" className="text-2xl font-bold text-blue-600">
-        icracs2024
+        {/* ICRACS 2024 */}
+      <Image src="/pietLogo.png" height={80} width={220}></Image>
       </Link>
       
       {/* Hamburger Icon for Mobile */}
@@ -90,7 +92,7 @@ export default function RootLayout({ children }) {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold">TechConf 2024</h3>
+              <h3 className="text-xl font-bold">International Conference on Recent Advances in Artificial intelligence, Computer Vision & Smart Systems (ICRACS)</h3>
               <p>Exploring the Future of Technology</p>
             </div>
             <div className="flex space-x-4">
