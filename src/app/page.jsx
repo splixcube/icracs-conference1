@@ -7,6 +7,8 @@ import { ConferenceTimeline } from './components/conference-timeline';
 import ImageSlider from './components/ImageSlider';
 import About from './components/about';
 import CallForPaper from './components/CallForPaper';
+import About1 from './components/about1';
+import About2 from './components/about2';
 
 export default function LandingPage() {
   const getSpeakersData = () => {
@@ -82,6 +84,8 @@ export default function LandingPage() {
 
       {/* About Section */}
       <About />
+      <About1 />
+      <About2 />
 
       {/* Speakers Section */}
       <section className="bg-gray-100 py-12 md:py-20">

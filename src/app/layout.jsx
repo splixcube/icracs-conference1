@@ -72,6 +72,16 @@ export default function RootLayout({ children }) {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/schedule" className="text-blue-600 hover:text-blue-800">
+                  Organizing Committiees
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/schedule" className="text-blue-600 hover:text-blue-800">
+                  Upload Paper
+                  </Link>
+                </li>
+                <li>
                   <Link href="/contact" className="text-blue-600 hover:text-blue-800">
                     Contact
                   </Link>
