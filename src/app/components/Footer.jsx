@@ -11,7 +11,7 @@ export default function Footer() {
             <p className="text-blue-100">International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems</p>
             <p className="text-sm">Exploring the Future of Technology</p>
           </div>
-          
+
           <div className="space-y-4">
             <h4 className="text-xl font-semibold">Quick Links</h4>
             <nav className="flex flex-col space-y-2">
@@ -22,7 +22,7 @@ export default function Footer() {
               </Link>
             </nav>
           </div>
-          
+
           <div className="space-y-4">
             <h4 className="text-xl font-semibold">Contact Information</h4>
             <div className="space-y-2">
@@ -53,16 +53,39 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="mt-8 pt-8 border-t border-blue-400">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-blue-100">&copy; 2024 ICRACS. All rights reserved.</p>
-            <p className="text-md text-blue-100 mt-2 md:mt-0">Developed by The Cyborgs</p>
+
+            <div className="mt-4 flex items-center justify-center">
+              <MapPin className="w-5 h-5 mr-2" />
+
+              <p className="text-sm text-blue-100">ISI-2, RIICO Institutional Area, Sitapura, Jaipur - 302022</p>
+
+            </div>
           </div>
+          {/* <div className="mt-4 flex items-center justify-center">
+            <Link href="https://bento.me/thecyborgs" target="_blank" >
+            <p className="text-md text-blue-100 mt-2 md:mt-0 font-bold">Design & Developed by The Cyborgs</p>
+            </Link>
+          </div> */}
           <div className="mt-4 flex items-center justify-center">
-            <MapPin className="w-5 h-5 mr-2" />
-            <p className="text-sm text-blue-100">ISI-2, RIICO Institutional Area, Sitapura, Jaipur - 302022</p>
+            <Link
+              href="https://bento.me/thecyborgs"
+              target="_blank"
+              className="group"
+            >
+              <p className="text-md mt-2 md:mt-0 font-bold relative">
+                <span className="bg-gradient-to-r from-yellow-200 via-orange-300 to-white text-transparent bg-clip-text">
+                  Design & Developed by The Cyborgs
+                </span>
+                <span className="absolute left-0 right-0 -bottom-1 h-0.5 bg-gradient-to-r from-yellow-300 to-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              </p>
+            </Link>
           </div>
+
+
         </div>
       </div>
     </footer>

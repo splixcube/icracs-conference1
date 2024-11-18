@@ -11,7 +11,8 @@ import About1 from './components/about1';
 import About2 from './components/about2';
 
 export default function LandingPage() {
-  const getSpeakersData = () => {
+  
+const getSpeakersData = () => {
     return [
       {
         id: 1,
@@ -41,7 +42,6 @@ export default function LandingPage() {
       // Add more speakers as needed
     ];
   };
-
 
   return (
     <>  {/* Hero Section */}
