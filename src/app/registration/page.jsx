@@ -1,5 +1,6 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { ExternalLink } from 'lucide-react'
 
 const categories = [
   {
@@ -62,12 +63,61 @@ const accountDetails = [
   { label: "SWIFT Code", value: "HDFCINBBXXX" },
 ];
 
+const contactInfo = [
+  { name: "Dr. Saurabh Raj", phone: "8127741447, 7458080822", email: "saurabh.raj@poornima.org" },
+  { name: "Ms. Shiwangi Sharma", email: "shiwangi.sharma@poornima.org" },
+  { name: "Mrs. Bersha Kumari", phone: "6375900934", email: "bersha.kumari@poornima.org" },
+];
+
 export default function Registration() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-12">
-        <h1 className="text-4xl font-bold text-center text-blue-600">Registration Fee</h1>
+        <h1 className="text-4xl font-bold text-center text-blue-600">Registration</h1>
         
+        <Card className="shadow-lg">
+          <CardHeader className="bg-blue-50">
+            <CardTitle className="text-2xl font-semibold text-blue-700">Registration Process</CardTitle>
+          </CardHeader>
+          <CardContent className="p-6 space-y-4">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>One of the authors must register for the conference and must present the paper himself/herself.</li>
+              <li>Online Registration fee shall be deposited in the account mentioned at Registration Page.</li>
+            </ul>
+            <div className="flex items-center space-x-2">
+              <span className="font-semibold">CMT Link:</span>
+              <a href="https://cmt3.research.microsoft.com/ICRACS2024" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center">
+                ICRACS2024 <ExternalLink className="w-4 h-4 ml-1" />
+              </a>
+            </div>
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold mb-2">For More Information</h3>
+              <div className="space-y-2">
+                {contactInfo.map((contact, index) => (
+                  <p key={index}>
+                    <span className="font-medium">{contact.name}</span>
+                    {contact.phone && <span> ({contact.phone})</span>} • {contact.email}
+                  </p>
+                ))}
+              </div>
+              <div className="mt-4 space-y-2">
+                <p>
+                  <span className="font-medium">Visit:</span>{" "}
+                  <a href="http://convergence.poornima.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    http://convergence.poornima.org
+                  </a>
+                </p>
+                <p>
+                  <span className="font-medium">Write to:</span> icracs@poornima.org
+                </p>
+                <p>
+                  <span className="font-medium">Address:</span> ISI-2, RIICO Institutional Area, Sitapura, Jaipur - 302022
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         <Card className="shadow-lg">
           <CardHeader className="bg-blue-50">
             <CardTitle className="text-2xl font-semibold text-blue-700">Fee Structure</CardTitle>
