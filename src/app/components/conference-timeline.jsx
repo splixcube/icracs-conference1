@@ -3,45 +3,42 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const timelineEvents = [
   {
-    date: 'January 1, 2024',
-    title: 'Early Bird Registration Opens',
-    description: 'Get the best prices on conference tickets!'
+    date: "September 15, 2024",
+    title: "Full Paper Submission Date",
+    // note: "Extended to October 31, 2024",
   },
   {
-    date: 'March 1, 2024',
-    title: 'Call for Speakers Closes',
-    description: 'Last day to submit your speaker proposals'
+    date: "November 15, 2024",
+    title: "Notification of Acceptance",
   },
   {
-    date: 'April 15, 2024',
-    title: 'Early Bird Registration Ends',
-    description: 'Last chance for discounted tickets'
+    date: "November 25, 2024",
+    title: "Revised Paper Submission",
   },
   {
-    date: 'June 1, 2024',
-    title: 'Regular Registration Period',
-    description: 'Standard ticket prices now apply'
+    date: "November 25, 2024",
+    title: "Early Bird Registration",
   },
   {
-    date: 'August 15, 2024',
-    title: 'Late Registration Begins',
-    description: 'Final chance to secure your spot'
+    date: "November 30, 2024",
+    title: "Late Registration",
   },
   {
-    date: 'September 15-17, 2024',
-    title: 'TechConf 2024',
-    description: 'Join us for three days of innovation!'
-  }
+    date: "December 23-24, 2024",
+    title: "Conference Dates",
+  },
 ];
+
 
 export function ConferenceTimeline() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-blue-600">Conference Timeline</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-blue-600">CONFERENCE TIMELINE</h2>
         <div className="relative">
+
           {/* Horizontal scrollable timeline for larger screens */}
-          <div className="hidden md:block overflow-x-auto pb-8">
+          <div className="hidden md:block overflow-x-auto pb-8 ">
             <div className="relative" style={{ width: `${timelineEvents.length * 250}px` }}>
               {/* Horizontal line */}
               <div className="absolute top-1/2 left-0 w-full h-1 bg-blue-200 transform -translate-y-1/2"></div>
@@ -50,11 +47,11 @@ export function ConferenceTimeline() {
                 {timelineEvents.map((event, index) => (
                   <div key={index} className="flex flex-col items-center w-64">
                     <div className="w-8 h-8 bg-blue-600 rounded-full mb-2"></div>
-                    <Card className="w-56 text-center">
+                    <Card className="w-56 h-28 text-center">
                       <CardContent className="p-4">
                         <p className="font-semibold text-blue-600">{event.date}</p>
                         <h3 className="font-bold mt-2">{event.title}</h3>
-                        <p className="text-sm text-gray-600 mt-1">{event.description}</p>
+                        {/* <p className="text-sm text-gray-600 mt-1">{event.description}</p> */}
                       </CardContent>
                     </Card>
                   </div>

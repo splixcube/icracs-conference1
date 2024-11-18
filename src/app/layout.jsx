@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 
               {/* Menu Links */}
               <ul
-                className={`flex-col sm:flex-row sm:flex space-x-0 sm:space-x-4 space-y-2 sm:space-y-0 absolute sm:relative bg-white sm:bg-transparent top-16 left-0 sm:top-0 w-full sm:w-auto items-center sm:items-center py-4 sm:py-0 transition-all duration-200 ease-in-out ${isOpen ? "flex" : "hidden sm:flex"
+                className={`flex-col sm:flex-row sm:flex space-x-0 sm:space-x-8 space-y-2 sm:space-y-0 absolute sm:relative bg-white sm:bg-transparent top-16 left-0 sm:top-0 w-full sm:w-auto items-center sm:items-center py-4 sm:py-0 transition-all duration-200 ease-in-out ${isOpen ? "flex" : "hidden sm:flex"
                   }`}
               >
                 <li>
@@ -69,6 +69,11 @@ export default function RootLayout({ children }) {
                 <li>
                   <Link href="/schedule" className="text-blue-600 hover:text-blue-800">
                     Schedule
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/importantdates" className="text-blue-600 hover:text-blue-800">
+                    Important Dates
                   </Link>
                 </li>
                 <li>
