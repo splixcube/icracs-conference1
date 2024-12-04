@@ -24,8 +24,8 @@ const committeeData = [
   {
     title: "Program Co-Chair",
     members: [
-      "Dr. Saurabh Raj, Associate Professor Department of AI & DS, PIET",
-      "Dr. Sandeep Gupta, Associate Professor Department of AI & DS, PIET",
+      "Ms.Alka Rani, Dy. HOD (Academics) Dept. of AI & DS, PIET",
+      "Dr. Uday Pratap, Singh Dy. HOD (Admin) Dept. of AI & DS, PIET",
     ]
   },
   // {
@@ -40,8 +40,27 @@ const committeeData = [
   {
     title: "Organizing Secretaries",
     members: [
-      "Dr. Uday Pratap, Singh Dy. HOD (Admin) Dept. of AI & DS, PIET",
-      "Ms.Alka Rani, Dy. HOD (Academics) Dept. of AI & DS, PIET",
+      "Dr. Saurabh Raj, Associate Professor Department of AI & DS, PIET",
+      "Dr. Sandeep Gupta, Associate Professor Department of AI & DS, PIET",
+    ]
+  },
+  {
+    title: "TPC Chair",
+    members: [
+      "Dr. Ajay Maurya, Professor, Dept. of AI & DS, PIET",
+    ]
+  },
+  {
+    title: "Finance Chair",
+    members: [
+      "Mr. Punit Kumar, Assistant Professor, Dept. of AI & DS, PIET",
+    ],
+  },
+  {
+    title: "Publicity Chair",
+    members: [
+      "Dr. Priya Mathur, Professor, Dept. of AI & DS, PIET",
+      "Mr. Ebtasam Ahmad Siddiqui, Assistant Professor, Dept. of AI & DS, PIET",
     ]
   },
   {
@@ -58,24 +77,6 @@ const committeeData = [
       "Mr. Bharat Thathera, Assistant Professor, Dept. of AI & DS, PIET",
       "Mr. Rohit Kumar, Assistant Professor, Dept. of AI & DS, PIET",
       "Mr. Girdhari Lal, Assistant Professor, Dept. of AI & DS, PIET",
-    ]
-  }, {
-    title: "TPC Chair",
-    members: [
-      "Mr. Ebtasam Ahmad Siddiqui, Assistant Professor, Dept. of AI & DS, PIET",
-    ]
-  },
-  {
-    title: "Finance Chair",
-    members: [
-      "Mr. Punit Kumar, Assistant Professor, Dept. of AI & DS, PIET",
-    ],
-  },
-  {
-    title: "Publicity Chair",
-    members: [
-      "Dr. Priya Mathur, Professor, Dept. of AI & DS, PIET",
-      "Dr. Ajay Maurya, Professor, Dept. of AI & DS, PIET",
     ]
   },
 
