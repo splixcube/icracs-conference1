@@ -17,36 +17,69 @@ const committeeData = [
   {
     title: "Program Chair",
     members: [
-        "Dr. Sama Jain, HOD Department of Applied Sciences, PIET",
-        "Dr. Anil Kumar HOD Department of CSE, PIET",
-        "Dr. Budesh Kanwar, HOD Department of AI & DS, PIET",
-        "Mr. Udit Mamodiya, HOD PIET AICTE IDEA Lab, PIET",
+      "Dr. Budesh Kanwar, HOD Department of AI & DS, PIET",
+      "Dr. Ravi kumar, Arya Director, Xiangshan Laboratory Wireless Group, Zhingshan Institute of Changchun University of Science and Technology, China"
     ]
   },
   {
     title: "Program Co-Chair",
     members: [
-       "Dr Prince Dawar, Associate Professor, Department of English, Humanities and Soft Skills, PIET",
+      "Dr. Saurabh Raj, Associate Professor Department of AI & DS, PIET",
+      "Dr. Sandeep Gupta, Associate Professor Department of AI & DS, PIET",
     ]
   },
-  {
-    title: "Conveners",
-    members: [
-      "Mr. Indra Kishor Assistant Professor, CSE",
-      "Dr. Saurabh Raj Associate Professor, AI & DS",
-      "Dr. Rekha Rani Agarwal, Associate Professor, Applied Sciences",
-      "Ms. Reshma Kala, Assistant Professor, IDEA LAB",
-    ]
-  },
+  // {
+  //   title: "Conveners",
+  //   members: [
+  //     "Mr. Indra Kishor Assistant Professor, CSE",
+  //     "Dr. Saurabh Raj Associate Professor, AI & DS",
+  //     "Dr. Rekha Rani Agarwal, Associate Professor, Applied Sciences",
+  //     "Ms. Reshma Kala, Assistant Professor, IDEA LAB",
+  //   ]
+  // },
   {
     title: "Organizing Secretaries",
     members: [
-      "Dr.Shruti Thapar Associate Professor, PIET",
-      "Mr. Anurag Anand Duvey Assistant Professor, AI & DS PIET",
-      "Ms. Aniva Sharma, Assistant Professor, PIET",
-      "Mr. Ashish Laddha, Assistant Professor, PIET",
+      "Dr. Uday Pratap, Singh Dy. HOD (Admin) Dept. of AI & DS, PIET",
+      "Ms.Alka Rani, Dy. HOD (Academics) Dept. of AI & DS, PIET",
     ]
   },
+  {
+    title: "Organizing Committee",
+    members: [
+      "Mr. Anurag Anand Dubey, Assistant Professor, Dept. of AI & DS, PIET",
+      "Ms. Chanchal Tiwari, Assistant Professor, Dept. of AI & DS, PIET",
+      "Mr. Mohnish Sachdeva, Assistant Professor, Dept. of AI & DS, PIET",
+      "Ms. Bhawna Purohit, Assistant Professor, Dept. of AI & DS, PIET",
+      "Ms. Bhawna Kumari, Assistant Professor, Dept. of AI & DS, PIET",
+      "Mr. Vikas Kumar, Assistant Professor, Dept. of AI & DS, PIET",
+      "Mr. Vaibhav Shekhawat, Assistant Professor, Dept. of AI & DS, PIET",
+      "Mr. Kamal Saini, Assistant Professor, Dept. of AI & DS, PIET",
+      "Mr. Bharat Thathera, Assistant Professor, Dept. of AI & DS, PIET",
+      "Mr. Rohit Kumar, Assistant Professor, Dept. of AI & DS, PIET",
+      "Mr. Girdhari Lal, Assistant Professor, Dept. of AI & DS, PIET",
+    ]
+  }, {
+    title: "TPC Chair",
+    members: [
+      "Mr. Ebtasam Ahmad Siddiqui, Assistant Professor, Dept. of AI & DS, PIET",
+    ]
+  },
+  {
+    title: "Finance Chair",
+    members: [
+      "Mr. Punit Kumar, Assistant Professor, Dept. of AI & DS, PIET",
+    ],
+  },
+  {
+    title: "Publicity Chair",
+    members: [
+      "Dr. Priya Mathur, Professor, Dept. of AI & DS, PIET",
+      "Dr. Ajay Maurya, Professor, Dept. of AI & DS, PIET",
+    ]
+  },
+
+
 ]
 
 const CommitteeCard = ({ title, members }) => {

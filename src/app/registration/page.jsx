@@ -65,8 +65,7 @@ const accountDetails = [
 
 const contactInfo = [
   { name: "Dr. Saurabh Raj", phone: "8127741447, 7458080822", email: "saurabh.raj@poornima.org" },
-  { name: "Ms. Shiwangi Sharma", email: "shiwangi.sharma@poornima.org" },
-  { name: "Mrs. Bersha Kumari", phone: "6375900934", email: "bersha.kumari@poornima.org" },
+  { name: "Dr. Sandeep Gupta", phone: "9887448137", email: "sandeep.gupta@poornima.org" },
 ];
 
 export default function Registration() {

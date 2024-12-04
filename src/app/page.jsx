@@ -60,7 +60,7 @@ const getSpeakersData = () => {
           <div className="flex flex-col md:flex-row items-center md:gap-80">
             <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left">
-                ICRACS 2024
+                2nd Edition of ICRACS 2025
               </h1>
               <p className="text-md sm:text-lg md:text-xl mb-6 text-center md:text-left">
                 International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems
