@@ -38,7 +38,7 @@ const committeeData = [
   //   ]
   // },
   {
-    title: "Organizing Secretaries",
+    title: "Organizing Chair",
     members: [
       "Dr. Saurabh Raj, Associate Professor Department of AI & DS, PIET",
       "Dr. Sandeep Gupta, Associate Professor Department of AI & DS, PIET",

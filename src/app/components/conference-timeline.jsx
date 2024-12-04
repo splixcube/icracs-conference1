@@ -46,7 +46,10 @@ export function ConferenceTimeline() {
               <div className="relative z-10 flex justify-between">
                 {timelineEvents.map((event, index) => (
                   <div key={index} className="flex flex-col items-center w-64">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full mb-2"></div>
+                    <div className="w-8 h-8 bg-blue-600 rounded-full mb-2 flex items-center justify-center">
+                    <img src='/calendar.png' className="h-4 w-4" />
+
+                    </div>
                     <Card className="w-56 h-28 text-center">
                       <CardContent className="p-4">
                         <p className="font-semibold text-blue-600">{event.date}</p>
@@ -65,7 +68,9 @@ export function ConferenceTimeline() {
             {timelineEvents.map((event, index) => (
               <div key={index} className="flex items-start">
                 <div className="flex flex-col items-center mr-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
+                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                  <img src='/calendar.png' className="h-4 w-4" />
+                  </div>
                   <div className="w-1 h-full bg-blue-200 mt-2"></div>
                 </div>
                 <Card className="flex-grow">

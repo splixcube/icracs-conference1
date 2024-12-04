@@ -15,11 +15,10 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-xl font-semibold">Quick Links</h4>
             <nav className="flex flex-col space-y-2">
-              <Link href="/privacy" className="hover:underline text-blue-100">Privacy Policy</Link>
-              <Link href="/terms" className="hover:underline text-blue-100">Terms of Service</Link>
-              <Link href="http://convergence.poornima.org" target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-100">
-                Conference Website
-              </Link>
+              <Link href="/registration" className="hover:underline text-blue-100">Registration</Link>
+              <Link href="/importantdates" className="hover:underline text-blue-100">Important Dates</Link>
+              <Link href="/uploadpaper" className="hover:underline text-blue-100">Upload Paper</Link>
+             
             </nav>
           </div>
 
@@ -34,17 +33,14 @@ export default function Footer() {
                 <Mail className="w-5 h-5 mr-2" />
                 <a href="mailto:saurabh.raj@poornima.org" className="hover:underline">saurabh.raj@poornima.org</a>
               </p>
-              <p className="flex items-center">
-                <Mail className="w-5 h-5 mr-2" />
-                <a href="mailto:shiwangi.sharma@poornima.org" className="hover:underline">shiwangi.sharma@poornima.org</a>
-              </p>
+              
               <p className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />
-                <span>Mrs. Bersha Kumari: 6375900934</span>
+                <span>Dr. Sandeep Gupta: 9887448137</span>
               </p>
               <p className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" />
-                <a href="mailto:bersha.kumari@poornima.org" className="hover:underline">bersha.kumari@poornima.org</a>
+                <a href="mailto:bersha.kumari@poornima.org" className="hover:underline">sandeep.gupta@poornima.org</a>
               </p>
               <p className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" />

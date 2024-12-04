@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import Link from 'next/link';
+import { ChevronDown } from 'lucide-react'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 import { Button } from "@/components/ui/button";
 
@@ -59,7 +66,7 @@ function Header() {
                                 Speakers
                             </Link>
                         </li>
-                       
+
                         <li>
                             <Link href="/importantdates" className="text-blue-600 hover:text-blue-800">
                                 Important Dates
@@ -71,26 +78,41 @@ function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/organizingcommittiees" className="text-blue-600 hover:text-blue-800">
-                                Organizing Committiees
-                            </Link>
+
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <div className="text-blue-600 hover:text-blue-800 flex items-center cursor-pointer">
+                                    Committee <ChevronDown className="ml-1 h-4 w-4" />
+                                </div>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align="start">
+                                <DropdownMenuItem asChild>
+                                    <Link href="/advisorycommittiees" className="w-full">
+                                        Advisory Committees
+                                    </Link>
+                                </DropdownMenuItem>
+                                <DropdownMenuItem asChild>
+                                    <Link href="/organizingcommittiees" className="w-full">
+                                        Organizing Committees
+                                    </Link>
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
                         </li>
-                        <li>
-                            <Link href="/advisorycommittiees" className="text-blue-600 hover:text-blue-800">
-                            advisorycommittiees
-                            </Link>
-                        </li>
+
+
                         <li>
                             <Link href="/uploadpaper" className="text-blue-600 hover:text-blue-800">
                                 Upload Paper
                             </Link>
                         </li>
-                        <li>
+
+                    </ul>
+                    {/* <li>
                             <Link href="/contact" className="text-blue-600 hover:text-blue-800">
                                 Contact
                             </Link>
-                        </li>
-                    </ul>
+                        </li> */}
 
                     {/* Register Button (Only visible on larger screens) */}
                     <Button variant="outline" className="hidden sm:block">
