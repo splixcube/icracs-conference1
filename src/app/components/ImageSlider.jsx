@@ -23,8 +23,8 @@ const ImageSlider = () => {
             <Slider {...settings} className="">
                 <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px]  overflow-hidden rounded-lg shadow-lg">
                     <Image
-                        src="/piet.jpeg"
-                        alt="Conference"
+                        src="/hero/1.jpg"
+                        alt="ICRACS 2"
                         width={600}
                         height={250}
                         className="w-full h-full object-cover"
@@ -32,8 +32,8 @@ const ImageSlider = () => {
                 </div>
                 <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] overflow-hidden rounded-lg shadow-lg">
                     <Image
-                        src="/piet2.jpeg"
-                        alt="Conference 2"
+                        src="/hero/2.png"
+                        alt="ICRACS"
                         width={600}
                         height={250}
                         className="w-full h-full object-cover"
@@ -41,8 +41,17 @@ const ImageSlider = () => {
                 </div>
                 <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] overflow-hidden rounded-lg shadow-lg">
                     <Image
-                        src="/piet3.jpeg"
-                        alt="Conference 3"
+                        src="/hero/3.jpg"
+                        alt="ICRACS"
+                        width={600}
+                        height={250}
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+                <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] overflow-hidden rounded-lg shadow-lg">
+                    <Image
+                        src="/hero/4.png"
+                        alt="ICRACS"
                         width={600}
                         height={250}
                         className="w-full h-full object-cover"
