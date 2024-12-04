@@ -76,6 +76,11 @@ function Header() {
                             </Link>
                         </li>
                         <li>
+                            <Link href="/advisorycommittiees" className="text-blue-600 hover:text-blue-800">
+                            advisorycommittiees
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/uploadpaper" className="text-blue-600 hover:text-blue-800">
                                 Upload Paper
                             </Link>
