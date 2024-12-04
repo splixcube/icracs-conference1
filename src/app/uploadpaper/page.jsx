@@ -5,16 +5,6 @@ import Link from "next/link"
 export default function UploadPaperLinks() {
   const conferences = [
     {
-      id: "icsis",
-      name: "ICSIS",
-      href: ""
-    },
-    {
-      id: "icisc",
-      name: "ICISC",
-      href: ""
-    },
-    {
       id: "icracs",
       name: "ICRACS",
       href: ""
@@ -27,9 +17,9 @@ export default function UploadPaperLinks() {
         <h1 className="text-3xl font-bold text-center text-blue-800 mb-12">
           Upload your paper using this link...
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex justify-center ">
           {conferences.map((conference) => (
-            <Card key={conference.id} className="bg-blue-600 hover:bg-blue-700 transition-colors duration-300">
+            <Card key={conference.id} className="bg-blue-600 w-96 hover:bg-blue-700 transition-colors duration-300">
               <CardContent className="p-8 flex flex-col items-center justify-center space-y-6">
                 <h2 className="text-3xl font-bold text-white">{conference.name}</h2>
                 <Link href={conference.href}>

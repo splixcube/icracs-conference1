@@ -42,7 +42,7 @@ function About() {
 
 <Card>
   <CardContent className="p-4 md:p-6">
-    <h3 className="text-lg md:text-xl font-semibold mb-2">Innovative Talks</h3>
+    {/* <h3 className="text-lg md:text-xl font-semibold mb-2">Innovative Talks</h3> */}
     <ul className="list-disc pl-4 space-y-2">
       <li className="pl-4">
         Poornima Institute of Engineering & Technology, Jaipur, PIET, a premier institution in engineering education was established in the academic year <b> 2007</b>. 
@@ -59,7 +59,7 @@ function About() {
 
 <Card>
   <CardContent className="p-4 md:p-6">
-    <h3 className="text-lg md:text-xl font-semibold mb-2">Innovative Talks</h3>
+    {/* <h3 className="text-lg md:text-xl font-semibold mb-2">Innovative Talks</h3> */}
     <ul className="list-disc pl-4 space-y-2">
       <li className="pl-4">PIET has been ranked <b> 3rd in QIV ranking. </b></li>
       <li className="pl-4">

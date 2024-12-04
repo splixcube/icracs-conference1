@@ -3,29 +3,29 @@ import { CalendarDays } from 'lucide-react'
 
 const events = [
   {
-    date: "2 March 2024",
-    title: "Full Paper Submission"
+    date: "January 25, 2025",
+    title: "Paper Submission",
   },
   {
-    date: "15 March 2024",
-    title: "Notification of Acceptance"
+    date: "February 10, 2025",
+    title: "Notification of Acceptance",
   },
   {
-    date: "25 March 2024",
-    title: "Camera Ready Paper"
+    date: "February 20, 2025",
+    title: "Camera Ready Paper",
   },
   {
-    date: "30 March 2024",
-    title: "Early Bird Registration"
+    date: "February 25, 2025",
+    title: "Early Bird Registration",
   },
   {
-    date: "10 April 2024",
-    title: "Registration (with Late Fee)"
+    date: "March 02, 2025",
+    title: "Late Registration",
   },
   {
-    date: "24-25 April 2024",
-    title: "Date of Conference"
-  }
+    date: "March 07-08, 2025",
+    title: "Conference Dates",
+  },
 ]
 
 export default function Component() {
