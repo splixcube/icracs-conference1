@@ -3,28 +3,28 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const timelineEvents = [
   {
-    date: "September 15, 2024",
-    title: "Full Paper Submission Date",
+    date: "January 25, 2025",
+    title: "Paper Submission",
     // note: "Extended to October 31, 2024",
   },
   {
-    date: "November 15, 2024",
+    date: "February 10, 2025",
     title: "Notification of Acceptance",
   },
   {
-    date: "November 25, 2024",
-    title: "Revised Paper Submission",
+    date: "February 20, 2025",
+    title: "Camera Ready Paper",
   },
   {
-    date: "November 25, 2024",
+    date: "February 25, 2025",
     title: "Early Bird Registration",
   },
   {
-    date: "November 30, 2024",
+    date: "March 02, 2025",
     title: "Late Registration",
   },
   {
-    date: "December 23-24, 2024",
+    date: "March 07-08, 2025",
     title: "Conference Dates",
   },
 ];
