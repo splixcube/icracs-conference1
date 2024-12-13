@@ -77,8 +77,20 @@ function Header() {
                                 Registration
                             </Link>
                         </li>
+                        
                         <li>
+                            <Link href="/uploadpaper" className="text-blue-600 hover:text-blue-800">
+                                Upload Paper
+                            </Link>
+                        </li>
+                        
+                        {/* <li>
+                            <Link href="/callforpapers" className="text-blue-600 hover:text-blue-800">
+                                Call For Papers
+                            </Link>
+                        </li> */}
 
+                        <li>
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <div className="text-blue-600 hover:text-blue-800 flex items-center cursor-pointer">
@@ -101,11 +113,6 @@ function Header() {
                         </li>
 
 
-                        <li>
-                            <Link href="/uploadpaper" className="text-blue-600 hover:text-blue-800">
-                                Upload Paper
-                            </Link>
-                        </li>
 
                     </ul>
                     {/* <li>
