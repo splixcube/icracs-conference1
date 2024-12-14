@@ -155,7 +155,7 @@ const MemberCard = ({ member }) => {
   return (
     <div
 
-      className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-all duration-300"
+      className="bg-white border border-gray rounded-lg shadow-md p-4 hover:shadow-lg transition-all duration-300"
     >
       <h3 className="text-lg font-semibold text-blue-600 mb-2">{name}</h3>
       <p className="text-sm text-gray-600">{details.join(',')}</p>
