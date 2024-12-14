@@ -1,6 +1,7 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ExternalLink } from 'lucide-react'
+import { ConferenceTimeline } from "../components/conference-timeline";
 
 const categories = [
   {
@@ -71,6 +72,7 @@ const contactInfo = [
 export default function Registration() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-12 px-4 sm:px-6 lg:px-8">
+      <ConferenceTimeline />
       <div className="max-w-5xl mx-auto space-y-12">
         <h1 className="text-4xl font-bold text-center text-blue-600">Registration</h1>
         

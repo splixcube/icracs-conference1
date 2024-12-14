@@ -52,7 +52,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-blue-400">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-blue-100">&copy; 2024 ICRACS. All rights reserved.</p>
+            <p className="text-sm text-blue-100">&copy; 2025 ICRACS. All rights reserved.</p>
 
             <div className="mt-4 flex items-center justify-center">
               <MapPin className="w-5 h-5 mr-2" />

@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { ConferenceTimeline } from "../components/conference-timeline"
 
 export default function UploadPaperLinks() {
   const conferences = [
@@ -13,6 +14,7 @@ export default function UploadPaperLinks() {
 
   return (
     <section className="py-20 bg-white">
+      <ConferenceTimeline />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-center text-blue-800 mb-12">
           Upload your paper using this link...

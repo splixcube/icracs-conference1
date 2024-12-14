@@ -45,7 +45,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row items-center md:gap-80">
             <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left">
-                2nd Edition of ICRACS 2025
+                2nd ICRACS
               </h1>
               <p className="text-md sm:text-lg md:text-xl mb-6 text-center md:text-left">
                 International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems
@@ -104,7 +104,7 @@ export default function LandingPage() {
       <About2 />
 
       {/* Speakers Section */}
-      <section className="py-12 md:py-20">
+      {/* <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">KEY NOTE SPEAKERS</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
@@ -125,11 +125,11 @@ export default function LandingPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* call for papers */}
 
-      <CallForPaper />
+      {/* <CallForPaper /> */}
 
     
 

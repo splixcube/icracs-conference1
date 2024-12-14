@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { ConferenceTimeline } from '../components/conference-timeline';
 
 export default function Speaker() {
   const getSpeakersData = () => {
@@ -53,6 +54,7 @@ export default function Speaker() {
 
     <div>
 
+      <ConferenceTimeline />
       {/* Speakers Section */}
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">

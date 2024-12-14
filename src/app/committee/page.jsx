@@ -1,7 +1,42 @@
 import React from 'react'
 import { Users } from 'lucide-react'
+import { ConferenceTimeline } from '../components/conference-timeline'
 
 const committeeData = [
+  {
+    title: "International Advisory Committee",
+    members: [
+      "Dr. Jasmin Grosinger, Associate Professor, Institute of Microwave and Photonic Engineering, Graz University of Technology, Austria",
+      "Mr. Surender Rama Sitaraman, Intel Corporation, California, USA",
+      "Mr. Dinesh Kumar Reddy Basani, CGI, British Columbia, Canada",
+      "Dr. Eduardo Lugo, Visual Psychophysics and Perception Laboratory, School of Optometry, University of Montreal, Canada",
+      "Prof. (Dr.) Badrul Hisham Bin Ahmad, Professor, Universiti Teknikal Malaysia Melaka",
+    ]
+  },
+  {
+    title: "National Advisory Committee",
+    members: [
+      "Dr. Arun Prakash, Professor, MNNIT, Allahabad",
+      "Dr. Mayank Pandey, Professor, MNNIT, Allahabad",
+      "Dr. Raghuvendra Pal, Assistant Professor, VNIT, Surat",
+      "Dr. Himanshu Katiyar, Associate Professor, REC, Sonbhadra",
+      "Dr. Abhinav Gupta, Assistant Professor, REC, Sonbhadra",
+      "Dr. Nand Kishore, Assistant Professor, HBTI, Kanpur",
+      "Dr. Ankur Kumar, Assistant Professor, School of Electronics, IIIT Una",
+      "Dr. Nigam Garg, Assistant Professor, School of Electronics, IIIT Una",
+      "Dr. Shatraghun Modi, Assistant Professor, School of Computing, IIIT Una",
+      "Dr. Mrityunjai Singh, Assistant Professor, School of Computing, IIIT Una",
+      "Mr. Swapnil Gaul, Founder and Director of NumeroGen Technology",
+      "Dr. Akash Saxena, Professor, Central University of Haryana, Mahendergarh",
+      "Prof. (Dr.) Madhu Shandilya, Professor, MANIT, Bhopal",
+      "Satyanashu Srivastava, HR Lead - Technical Trainings | Skill Development, Generative AI",
+      "Dr. Ashutosh Kumar, IIIT Allahabad",
+      "Ashish Kumar Tiwari, CEO and Founder - Feather Thread Corporation LLP",
+      "Prof. (Dr.) Sandeep Saxena, Professor & Head, JIMS Greater Noida, Senior Member IEEE, Keynote Speaker/Associate Editor/Resource Person",
+      "Dr. Kanad Ray, Professor, Amity University, Rajasthan",
+      "Prof. Narendra S. Chaudhari, Professor, Assam Science and Technology University-ASTU (Government of Assam), Guwahati",
+    ]
+  },
   {
     title: "Patrons",
     members: [
@@ -28,16 +63,7 @@ const committeeData = [
       "Dr. Uday Pratap, Singh Dy. HOD (Admin) Dept. of AI & DS, PIET",
     ]
   },
-  // {
-  //   title: "Conveners",
-  //   members: [
-  //     "Mr. Indra Kishor Assistant Professor, CSE",
-  //     "Dr. Saurabh Raj Associate Professor, AI & DS",
-  //     "Dr. Rekha Rani Agarwal, Associate Professor, Applied Sciences",
-  //     "Ms. Reshma Kala, Assistant Professor, IDEA LAB",
-  //   ]
-  // },
-  {
+   {
     title: "Organizing Chair",
     members: [
       "Dr. Saurabh Raj, Associate Professor Department of AI & DS, PIET",
@@ -79,11 +105,9 @@ const committeeData = [
       "Mr. Girdhari Lal, Assistant Professor, Dept. of AI & DS, PIET",
     ]
   },
-
-
 ]
 
-const CommitteeCard = ({ title, members }) => {
+const AdvisoryCommitteeCard = ({ title, members }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out hover:shadow-lg mb-8">
       <div className="p-6">
@@ -104,14 +128,15 @@ const CommitteeCard = ({ title, members }) => {
   )
 }
 
-const OrganizingCommittee = () => {
+const AdvisoryCommittee = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-12 px-4 sm:px-6 lg:px-8 ">
+      <ConferenceTimeline />
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">Organizing Committee</h1>
-        <div className="space-y-8">
+        <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">Committee</h1>
+        <div className="space-y-8 ">
           {committeeData.map((committee, index) => (
-            <CommitteeCard key={index} title={committee.title} members={committee.members} />
+            <AdvisoryCommitteeCard key={index} title={committee.title} members={committee.members} />
           ))}
         </div>
       </div>
@@ -119,4 +144,4 @@ const OrganizingCommittee = () => {
   )
 }
 
-export default OrganizingCommittee
+export default AdvisoryCommittee

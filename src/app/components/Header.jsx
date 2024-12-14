@@ -57,6 +57,11 @@ function Header() {
                             </Link>
                         </li>
                         <li>
+                            <Link href="/callforpaperspage" className="text-blue-600 hover:text-blue-800">
+                                Call For Papers
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/about" className="text-blue-600 hover:text-blue-800">
                                 About
                             </Link>
@@ -67,11 +72,11 @@ function Header() {
                             </Link>
                         </li>
 
-                        <li>
+                        {/* <li>
                             <Link href="/importantdates" className="text-blue-600 hover:text-blue-800">
                                 Important Dates
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link href="/registration" className="text-blue-600 hover:text-blue-800">
                                 Registration
@@ -83,6 +88,16 @@ function Header() {
                                 Upload Paper
                             </Link>
                         </li>
+                        <li>
+                            <Link href="/committee" className="text-blue-600 hover:text-blue-800">
+                                Committee
+                            </Link>
+                        </li>
+                        {/* <li>
+                            <Link href="/archieve" className="text-blue-600 hover:text-blue-800">
+                                Archieve
+                            </Link>
+                        </li> */}
                         
                         {/* <li>
                             <Link href="/callforpapers" className="text-blue-600 hover:text-blue-800">
@@ -90,7 +105,7 @@ function Header() {
                             </Link>
                         </li> */}
 
-                        <li>
+                        {/* <li>
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <div className="text-blue-600 hover:text-blue-800 flex items-center cursor-pointer">
@@ -110,7 +125,7 @@ function Header() {
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
-                        </li>
+                        </li> */}
 
 
 
