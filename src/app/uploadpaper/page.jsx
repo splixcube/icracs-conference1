@@ -33,6 +33,13 @@ export default function UploadPaperLinks() {
             </Card>
           ))}
         </div>
+        <div className="text-center m-8 ">
+          <a href="/samplepaper.pdf" download>
+            <Button className="bg-blue-600 shadow-xl hover:bg-blue-600 ">
+              Download Sample Paper
+            </Button>
+          </a>
+        </div>
       </div>
     </section>
   )
