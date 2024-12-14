@@ -133,7 +133,7 @@ const AdvisoryCommittee = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-12 px-4 sm:px-6 lg:px-8 ">
       <ConferenceTimeline />
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">Advisory Committee</h1>
+        <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">Committee</h1>
         <div className="space-y-8 ">
           {committeeData.map((committee, index) => (
             <AdvisoryCommitteeCard key={index} title={committee.title} members={committee.members} />
