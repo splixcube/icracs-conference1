@@ -18,6 +18,7 @@ export default function Footer() {
               <Link href="/registration" className="hover:underline text-blue-100">Registration</Link>
               <Link href="/importantdates" className="hover:underline text-blue-100">Important Dates</Link>
               <Link href="/uploadpaper" className="hover:underline text-blue-100">Upload Paper</Link>
+              <a href="/samplepaper.pdf" download className="hover:underline text-blue-100">Sample Paper</a>
              
             </nav>
           </div>
@@ -61,11 +62,6 @@ export default function Footer() {
 
             </div>
           </div>
-          {/* <div className="mt-4 flex items-center justify-center">
-            <Link href="https://bento.me/thecyborgs" target="_blank" >
-            <p className="text-md text-blue-100 mt-2 md:mt-0 font-bold">Design & Developed by The Cyborgs</p>
-            </Link>
-          </div> */}
           <div className="mt-4 flex items-center justify-center">
             <Link
               href="https://bento.me/thecyborgs"

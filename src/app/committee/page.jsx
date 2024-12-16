@@ -1,6 +1,7 @@
 import React from 'react'
 import { Users } from 'lucide-react'
 import { ConferenceTimeline } from '../components/conference-timeline'
+import Partners from '@/components/ui/partners'
 
 const committeeData = [
   {
@@ -11,28 +12,28 @@ const committeeData = [
     ]
   },
   {
-    title: "Patrons",
-    members: [
-      "Dr. Dinesh Goyal, Principal & Director, PIET",
-    ]
-  },
-  {
-    title: "Co-patron",
-    members: [
-      "Dr. Gautam Singh, Registrar, PIET",
-    ]
-  },
-  {
     title: "Honorary Chair",
     members: [
       "Prof. Valentina Emilia Bălaş, Aurel Vlaicu University of Arab",
     ]
   },
   {
+    title: "General Chair",
+    members: [
+      "Dr. Dinesh Goyal, Principal & Director, PIET",
+    ]
+  },
+  // {
+  //   title: "Co-patron",
+  //   members: [
+  //     "Dr. Gautam Singh, Registrar, PIET",
+  //   ]
+  // },
+  {
     title: "Conference Chair",
     members: [
+      "Dr. Ravi kumar, Arya Director, Xiangshan Laboratory Wireless Group, Zhingshan Institute of Changchun University of Science and Technology, China",
       "Dr. Budesh Kanwar, HOD Department of AI & DS, PIET",
-      "Dr. Ravi kumar, Arya Director, Xiangshan Laboratory Wireless Group, Zhingshan Institute of Changchun University of Science and Technology, China"
     ]
   },
   {
@@ -55,7 +56,7 @@ const committeeData = [
       "Dr. Atulya Nagar, Pro Vice Chancellor for Research, Liverpool Hope University",
       "Dr. Shatraghun Modi, Assistant Professor, School of Computing, IIIT Una",
       "Dr. Ajay Maurya, Professor, Dept. of AI & DS, PIET",
-      "Dr. Saurabh Raj Associate Professor Department of AI &amp; DS, PIET",
+      "Dr. Saurabh Raj, Associate Professor Department of AI &amp; DS, PIET",
       "Prof. Narendra S. Chaudhari, Professor, Assam science and Technology University - ASTU(Government of Assam), Guwahati",
     ]
   },
@@ -176,7 +177,7 @@ const AdvisoryCommitteeCard = ({ title, members }) => {
 
 const AdvisoryCommittee = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-12 px-4 sm:px-6 lg:px-8 ">
+    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 ">
       <ConferenceTimeline />
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">Committee</h1>
@@ -186,6 +187,8 @@ const AdvisoryCommittee = () => {
           ))}
         </div>
       </div>
+
+      <Partners />
     </div>
   )
 }

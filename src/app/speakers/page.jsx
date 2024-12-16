@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ConferenceTimeline } from '../components/conference-timeline';
+import Partners from '@/components/ui/partners';
 
 export default function Speaker() {
   const getSpeakersData = () => {
@@ -10,21 +11,16 @@ export default function Speaker() {
       {
         id: 1,
         name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
+        image: "/speakerimg/VijayshriChaurasiya2.jpg?height=150&width=150",
         role: "Associate Professor, MANIT, Bhopal",
       },
       {
-        id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
+        id: 2,
+        name: "Prof.(Dr.) Sandeep Saxena",
+        image: "/speakerimg/SandeepSaxena.jpg?height=150&width=150",
+        role: "Professor &amp; Head, JIMS Greater Noida, Senior Member IEEE, Keynote Speaker/Associate Editor/Resource Person",
       },
-      {
-        id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
-      },
+      
     ];
   };
  
@@ -32,22 +28,22 @@ export default function Speaker() {
     return [
       {
         id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
+        name: "Dr. Akash Saxena",
+        image: "/speakerimg/akashsaxena.png?height=150&width=150",
+        role: "Central University of Haryana, Mahendergarh",
       },
-      {
-        id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
-      },
-      {
-        id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
-      },
+      // {
+      //   id: 2,
+      //   name: "Dr. Vijayshri Chaurasiya",
+      //   image: "/speakerimg/speaker.png?height=150&width=150",
+      //   role: "Associate Professor, MANIT, Bhopal",
+      // },
+      // {
+      //   id: 3,
+      //   name: "Dr. Vijayshri Chaurasiya",
+      //   image: "/speakerimg/speaker.png?height=150&width=150",
+      //   role: "Associate Professor, MANIT, Bhopal",
+      // },
     ];
   };
   return (
@@ -56,10 +52,10 @@ export default function Speaker() {
 
       <ConferenceTimeline />
       {/* Speakers Section */}
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">KEYNOTE SPEAKERS</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2  lg:grid-cols-2 gap-4 md:gap-8 md:mx-40">
             {getSpeakersData().map((speaker) => (
               <Card key={speaker.id}>
                 <CardContent className="p-4 md:p-6 text-center hover:border border-blue-500 rounded-md">
@@ -79,10 +75,10 @@ export default function Speaker() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">PAST SPEAKERS</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8">
             {getPastSpeakersData().map((speaker) => (
               <Card key={speaker.id}>
                 <CardContent className="p-4 md:p-6 text-center hover:border border-blue-500 rounded-md">
@@ -101,6 +97,8 @@ export default function Speaker() {
           </div>
         </div>
       </section>
+
+      <Partners />
     </div>
   )
 }

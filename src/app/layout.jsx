@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <div className="flex flex-col min-h-screen">
           <Header />
           {/* <main className="flex-grow bg-gradient-to-b from-white to-blue-100"> */}
-          <main className="flex-grow bg-white">
+          <main className="flex-grow bg-slate-50">
             {children}
           </main>
           <Footer />

@@ -4,7 +4,7 @@ import React from 'react'
 function About1() {
   return (
     <div>
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">ABOUT THE DEPARTMENT OF ARTIFICIAL INTELLIGENCE & DATA SCIENCE</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">

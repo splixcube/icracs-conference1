@@ -2,57 +2,59 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ExternalLink } from 'lucide-react'
 import { ConferenceTimeline } from "../components/conference-timeline";
+import { Button } from "@/components/ui/button";
+import Partners from "@/components/ui/partners";
 
 const categories = [
   {
     category: "Attendee",
-    publicationCharge: "₹1000",
-    afterDeadline: "₹2000",
+    publicationCharge: "₹1500",
+    afterDeadline: "₹2500",
   },
   {
     category: "UG Student Author (Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹3000",
-    afterDeadline: "₹4000",
-  },
-  {
-    category: "UG Student Author (Non-Member- ACM/ISTE/IEEE/FIP)",
     publicationCharge: "₹4000",
     afterDeadline: "₹5000",
   },
   {
-    category: "Post Graduate Scholar Author (Member- ACM/ISTE/IEEE/FIP)",
+    category: "UG Student Author (Non-Member- ACM/ISTE/IEEE/FIP)",
     publicationCharge: "₹5000",
+    afterDeadline: "₹6000",
+  },
+  {
+    category: "Post Graduate Scholar Author (Member- ACM/ISTE/IEEE/FIP)",
+    publicationCharge: "₹6000",
     afterDeadline: "₹7000",
   },
   {
     category: "Post Graduate Scholar Author (Non-Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹6000",
-    afterDeadline: "₹8000",
-  },
-  {
-    category: "Author-Faculty or Research Scholars (Member- ACM/ISTE/IEEE/FIP)",
     publicationCharge: "₹7000",
     afterDeadline: "₹9000",
   },
   {
+    category: "Author-Faculty or Research Scholars (Member- ACM/ISTE/IEEE/FIP)",
+    publicationCharge: "₹9000",
+    afterDeadline: "₹11,000",
+  },
+  {
     category: "Author-Faculty or Research Scholars (Non-Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹8000",
-    afterDeadline: "₹10000",
+    publicationCharge: "₹10,000",
+    afterDeadline: "₹12,000",
   },
   {
     category: "Corporate/Industry Professional",
-    publicationCharge: "₹9000",
-    afterDeadline: "₹10000",
+    publicationCharge: "₹11,000",
+    afterDeadline: "₹13,000",
   },
   {
     category: "Foreign Delegate (Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "$100",
-    afterDeadline: "$120",
+    publicationCharge: "$180",
+    afterDeadline: "$200",
   },
   {
     category: "Foreign Delegate (Non-Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "$120",
-    afterDeadline: "$150",
+    publicationCharge: "$220",
+    afterDeadline: "$250",
   },
 ];
 
@@ -71,15 +73,23 @@ const contactInfo = [
 
 export default function Registration() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
       <ConferenceTimeline />
+
+
       <div className="max-w-5xl mx-auto space-y-12">
+
         <h1 className="text-4xl font-bold text-center text-blue-600">Registration</h1>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+
         
+
         <Card className="shadow-lg">
           <CardHeader className="bg-blue-50">
-            <CardTitle className="text-2xl font-semibold text-blue-700">Registration Process</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-blue-700">Registration Guidelines</CardTitle>
           </CardHeader>
+
           <CardContent className="p-6 space-y-4">
             <ul className="list-disc pl-5 space-y-2">
               <li>One of the authors must register for the conference and must present the paper himself/herself.</li>
@@ -88,11 +98,28 @@ export default function Registration() {
             <div className="flex items-center space-x-2">
               <span className="font-semibold">CMT Link:</span>
               <a href="https://cmt3.research.microsoft.com/ICRACS2024" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center">
-                ICRACS2024 <ExternalLink className="w-4 h-4 ml-1" />
+                ICRACS2025 <ExternalLink className="w-4 h-4 ml-1" />
               </a>
             </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-2">For More Information</h3>
+
+            <div className="text-center">
+              <a href="/samplepaper.pdf" download>
+                <Button className="bg-blue-600 shadow-xl hover:bg-blue-600 mt-4 ">
+                  Download Sample Paper
+                </Button>
+              </a>
+            </div>
+
+          </CardContent>
+        </Card>
+        
+        <Card className="shadow-lg">
+          <CardHeader className="bg-blue-50">
+            <CardTitle className="text-2xl font-semibold text-blue-700">For More Information</CardTitle>
+          </CardHeader>
+
+          <CardContent className="p-6 space-y-4">
+          <div className="">
               <div className="space-y-2">
                 {contactInfo.map((contact, index) => (
                   <p key={index}>
@@ -116,8 +143,15 @@ export default function Registration() {
                 </p>
               </div>
             </div>
+
           </CardContent>
         </Card>
+
+        </div>
+
+
+
+
 
         <Card className="shadow-lg">
           <CardHeader className="bg-blue-50">
@@ -162,6 +196,8 @@ export default function Registration() {
           </CardContent>
         </Card>
       </div>
+
+      <Partners />
     </div>
   )
 }
