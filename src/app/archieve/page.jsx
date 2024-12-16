@@ -60,7 +60,7 @@ const ImageGallery = ({ images }) => (
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center text-blue-600 mb-8"
         >
-           ICRACS 2024 Archive
+           ICRACS 2024 Archieve
         </motion.h1>
         
         <motion.p 
