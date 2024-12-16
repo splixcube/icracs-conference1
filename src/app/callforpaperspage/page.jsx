@@ -18,7 +18,8 @@ export default function Speaker() {
       <ConferenceTimeline />
       <CallForPaper />
       {/* Registration Process */}
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 px-28 bg-slate-50 my-10">
+
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:px-28 px-8  bg-slate-50 my-10">
 
         
 

@@ -116,14 +116,14 @@ const ImageGallery = ({ images }) => (
           />
           <HighlightCard 
             icon={FileTextIcon}
-            title="CRC PUBLISHERS"
+            title="CRC (Scopus Index)"
             description="CRC Press, Taylor & Francis Group, USA"
             link="https://www.routledge.com/Recent-Advances-in-Sciences-Engineering-Information-Technology--Management/Goyal-Pratap-Gupta-Raj-Agrawal-Kishor/p/book/9781032983387"
           />
          
           <HighlightCard 
             icon={FileTextIcon}
-            title="IJTE PUBLISHERS"
+            title="IJTE (UGC Index)"
             description="Indian Journal of Technical Education"
             link="http://www.isteonline.in/Datafiles/cms//Special%20Issues//Spl%20issue%201%20June%202024%20for%20web%20uploading.pdf"
             

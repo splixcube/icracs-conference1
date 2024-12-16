@@ -11,7 +11,7 @@ export default function Speaker() {
       {
         id: 1,
         name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/VijayshriChaurasiya.jpeg?height=150&width=150",
+        image: "/speakerimg/VijayshriChaurasiya2.jpg?height=150&width=150",
         role: "Associate Professor, MANIT, Bhopal",
       },
       {
@@ -28,22 +28,22 @@ export default function Speaker() {
     return [
       {
         id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
+        name: "Dr. Akash Saxena",
+        image: "/speakerimg/akashsaxena.png?height=150&width=150",
+        role: "Central University of Haryana, Mahendergarh",
       },
-      {
-        id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
-      },
-      {
-        id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
-      },
+      // {
+      //   id: 2,
+      //   name: "Dr. Vijayshri Chaurasiya",
+      //   image: "/speakerimg/speaker.png?height=150&width=150",
+      //   role: "Associate Professor, MANIT, Bhopal",
+      // },
+      // {
+      //   id: 3,
+      //   name: "Dr. Vijayshri Chaurasiya",
+      //   image: "/speakerimg/speaker.png?height=150&width=150",
+      //   role: "Associate Professor, MANIT, Bhopal",
+      // },
     ];
   };
   return (
