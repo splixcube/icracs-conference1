@@ -97,10 +97,15 @@ function Header() {
                             </Link>
                         </li>
                         {/* <li>
+                            <Link href="/speakers" className="text-blue-600 hover:text-blue-800">
+                                Achive
+                            </Link>
+                        </li> */}
+                        <li>
                             <Link href="/archieve" className="text-blue-600 hover:text-blue-800">
                                 Archieve
                             </Link>
-                        </li> */}
+                        </li>
 
                         {/* <li>
                             <Link href="/callforpapers" className="text-blue-600 hover:text-blue-800">
