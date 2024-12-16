@@ -32,13 +32,13 @@ const timelineEvents = [
 
 export function ConferenceTimeline() {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-slate-50">
       <div className="container mx-auto px-4">
         {/* <h2 className="text-3xl font-bold text-center mb-10 text-blue-600">CONFERENCE TIMELINE</h2> */}
         <div className="relative">
 
           {/* Horizontal scrollable timeline for larger screens */}
-          <div className="hidden md:block overflow-x-auto pb-8 ">
+          <div className=" md:block overflow-x-auto pb-8 ">
             <div className="relative" style={{ width: `${timelineEvents.length * 250}px` }}>
               {/* Horizontal line */}
               <div className="absolute top-1/2 left-0 w-full h-1 bg-blue-200 transform -translate-y-1/2"></div>
@@ -64,7 +64,7 @@ export function ConferenceTimeline() {
           </div>
 
           {/* Vertical timeline for smaller screens */}
-          <div className="md:hidden space-y-8">
+          {/* <div className="md:hidden space-y-8">
             {timelineEvents.map((event, index) => (
               <div key={index} className="flex items-start">
                 <div className="flex flex-col items-center mr-4">
@@ -82,7 +82,7 @@ export function ConferenceTimeline() {
                 </Card>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

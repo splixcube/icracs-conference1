@@ -23,6 +23,15 @@ const ImageSlider = () => {
             <Slider {...settings} className="">
                 <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px]  overflow-hidden rounded-lg shadow-lg">
                     <Image
+                        src="/hero/5.webp"
+                        alt="ICRACS 2"
+                        width={600}
+                        height={250}
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+                <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px]  overflow-hidden rounded-lg shadow-lg">
+                    <Image
                         src="/hero/1.jpg"
                         alt="ICRACS 2"
                         width={600}
@@ -32,7 +41,7 @@ const ImageSlider = () => {
                 </div>
                 <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] overflow-hidden rounded-lg shadow-lg">
                     <Image
-                        src="/hero/2.jpg"
+                        src="/hero/2.png"
                         alt="ICRACS"
                         width={600}
                         height={250}
@@ -41,7 +50,7 @@ const ImageSlider = () => {
                 </div>
                 <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] overflow-hidden rounded-lg shadow-lg">
                     <Image
-                        src="/hero/2.png"
+                        src="/hero/2.jpg"
                         alt="ICRACS"
                         width={600}
                         height={250}

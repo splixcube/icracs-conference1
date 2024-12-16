@@ -3,9 +3,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Calendar, MapPin, Users, Award, FileText, Video } from 'lucide-react'
+import { Calendar, MapPin, Users, Award, FileText, Video, FileTextIcon, ExternalLink } from 'lucide-react'
 
-const HighlightCard = ({ icon: Icon, title, description }) => (
+const HighlightCard = ({ icon: Icon, title, description, link }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4"
@@ -15,7 +15,18 @@ const HighlightCard = ({ icon: Icon, title, description }) => (
     </div>
     <div>
       <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className='text-gray-500'>{description}</p>
+    </div>
+    
+    <div>
+
+    {link ? <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center">
+            View <ExternalLink className="w-4 h-4 ml-1" /> </a>    
+         
+         : ""}
+
+    
+    
     </div>
   </motion.div>
 )
@@ -76,12 +87,12 @@ const ImageGallery = ({ images }) => (
           <HighlightCard 
             icon={Calendar}
             title="Date"
-            description="March 15-17, 2024"
+            description="April 24-25, 2024"
           />
           <HighlightCard 
             icon={MapPin}
             title="Venue"
-            description="PIET, Jaipur"
+            description="Poornima Institute of Engineering & Technology, Jaipur"
           />
           <HighlightCard 
             icon={Users}
@@ -90,18 +101,32 @@ const ImageGallery = ({ images }) => (
           />
           <HighlightCard 
             icon={Award}
-            title="Keynote Speakers"
+            title="Speakers"
             description="5 experts"
           />
           <HighlightCard 
             icon={FileText}
-            title="Research Papers"
-            description="150+ cutting-edge papers presented"
+            title="Research Papers Received"
+            description="190+ research papers received"
           />
           <HighlightCard 
-            icon={Video}
-            title="Workshops"
-            description="5 hands-on workshops on various AI & DS topics"
+            icon={FileTextIcon}
+            title="Papers Published"
+            description="50+ cutting-edge papers presented & published"
+          />
+          <HighlightCard 
+            icon={FileTextIcon}
+            title="CRC PUBLISHERS"
+            description="CRC Press, Taylor & Francis Group, USA"
+            link="https://www.routledge.com/Recent-Advances-in-Sciences-Engineering-Information-Technology--Management/Goyal-Pratap-Gupta-Raj-Agrawal-Kishor/p/book/9781032983387"
+          />
+         
+          <HighlightCard 
+            icon={FileTextIcon}
+            title="IJTE PUBLISHERS"
+            description="Indian Journal of Technical Education"
+            link="http://www.isteonline.in/Datafiles/cms//Special%20Issues//Spl%20issue%201%20June%202024%20for%20web%20uploading.pdf"
+            
           />
         </div>
 

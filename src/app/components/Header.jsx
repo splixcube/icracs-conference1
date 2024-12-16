@@ -1,15 +1,6 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import Link from 'next/link';
-import { ChevronDown } from 'lucide-react'
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-
-import { Button } from "@/components/ui/button";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +13,7 @@ function Header() {
             <header className="bg-white shadow-sm">
                 <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
                     <Link href="/" className="text-2xl font-bold text-blue-600">
-                        {/* ICRACS 2024 */}
+                        {/* ICRACS 2025 */}
                         <Image src="/pietLogo.png" height={80} width={220}></Image>
                     </Link>
 
@@ -61,12 +52,6 @@ function Header() {
                                 Call For Papers
                             </Link>
                         </li>
-                        {/* <li>
-                            <Link href="/about" className="text-blue-600 hover:text-blue-800">
-                                About
-                            </Link>
-                        </li> */}
-
                         <li>
                             <Link href="/registration" className="text-blue-600 hover:text-blue-800">
                                 Registration
@@ -78,76 +63,17 @@ function Header() {
                                 Committee
                             </Link>
                         </li>
-                        {/* <li>
-                            <Link href="/importantdates" className="text-blue-600 hover:text-blue-800">
-                                Important Dates
-                            </Link>
-                        </li> */}
-
-
-                        <li>
-                            <Link href="/uploadpaper" className="text-blue-600 hover:text-blue-800">
-                                Upload Paper
-                            </Link>
-                        </li>
-                        
                         <li>
                             <Link href="/speakers" className="text-blue-600 hover:text-blue-800">
                                 Speakers
                             </Link>
                         </li>
-                        {/* <li>
-                            <Link href="/speakers" className="text-blue-600 hover:text-blue-800">
-                                Achive
-                            </Link>
-                        </li> */}
                         <li>
                             <Link href="/archieve" className="text-blue-600 hover:text-blue-800">
                                 Archieve
                             </Link>
                         </li>
-
-                        {/* <li>
-                            <Link href="/callforpapers" className="text-blue-600 hover:text-blue-800">
-                                Call For Papers
-                            </Link>
-                        </li> */}
-
-                        {/* <li>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                                <div className="text-blue-600 hover:text-blue-800 flex items-center cursor-pointer">
-                                    Committee <ChevronDown className="ml-1 h-4 w-4" />
-                                </div>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="start">
-                                <DropdownMenuItem asChild>
-                                    <Link href="/advisorycommittiees" className="w-full">
-                                        Advisory Committees
-                                    </Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href="/organizingcommittiees" className="w-full">
-                                        Organizing Committees
-                                    </Link>
-                                </DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-                        </li> */}
-
-
-
                     </ul>
-                    {/* <li>
-                            <Link href="/contact" className="text-blue-600 hover:text-blue-800">
-                                Contact
-                            </Link>
-                        </li> */}
-
-                    {/* Register Button (Only visible on larger screens) */}
-                    <Button variant="outline" className="hidden sm:block">
-                        Register Now
-                    </Button>
                 </nav>
             </header>
         </div>
