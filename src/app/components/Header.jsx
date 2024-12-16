@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from 'next/link';
 import { ChevronDown } from 'lucide-react'
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
 import { Button } from "@/components/ui/button";
@@ -61,44 +61,52 @@ function Header() {
                                 Call For Papers
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="/about" className="text-blue-600 hover:text-blue-800">
                                 About
                             </Link>
-                        </li>
-                        <li>
-                            <Link href="/speakers" className="text-blue-600 hover:text-blue-800">
-                                Speakers
-                            </Link>
-                        </li>
-
-                        {/* <li>
-                            <Link href="/importantdates" className="text-blue-600 hover:text-blue-800">
-                                Important Dates
-                            </Link>
                         </li> */}
+
                         <li>
                             <Link href="/registration" className="text-blue-600 hover:text-blue-800">
                                 Registration
                             </Link>
                         </li>
-                        
-                        <li>
-                            <Link href="/uploadpaper" className="text-blue-600 hover:text-blue-800">
-                                Upload Paper
-                            </Link>
-                        </li>
+
                         <li>
                             <Link href="/committee" className="text-blue-600 hover:text-blue-800">
                                 Committee
                             </Link>
                         </li>
                         {/* <li>
+                            <Link href="/importantdates" className="text-blue-600 hover:text-blue-800">
+                                Important Dates
+                            </Link>
+                        </li> */}
+
+
+                        <li>
+                            <Link href="/uploadpaper" className="text-blue-600 hover:text-blue-800">
+                                Upload Paper
+                            </Link>
+                        </li>
+                        
+                        <li>
+                            <Link href="/speakers" className="text-blue-600 hover:text-blue-800">
+                                Speakers
+                            </Link>
+                        </li>
+                        {/* <li>
+                            <Link href="/speakers" className="text-blue-600 hover:text-blue-800">
+                                Achive
+                            </Link>
+                        </li> */}
+                        <li>
                             <Link href="/archieve" className="text-blue-600 hover:text-blue-800">
                                 Archieve
                             </Link>
-                        </li> */}
-                        
+                        </li>
+
                         {/* <li>
                             <Link href="/callforpapers" className="text-blue-600 hover:text-blue-800">
                                 Call For Papers

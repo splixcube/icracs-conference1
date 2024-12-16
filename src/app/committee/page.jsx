@@ -23,6 +23,12 @@ const committeeData = [
     ]
   },
   {
+    title: "Honorary Chair",
+    members: [
+      "Prof. Valentina Emilia Bălaş, Aurel Vlaicu University of Arab",
+    ]
+  },
+  {
     title: "Conference Chair",
     members: [
       "Dr. Budesh Kanwar, HOD Department of AI & DS, PIET",
@@ -81,23 +87,8 @@ const committeeData = [
       "Mr. Bharat Thathera, Assistant Professor, Dept. of AI & DS, PIET",
       "Mr. Rohit Kumar, Assistant Professor, Dept. of AI & DS, PIET",
       "Mr. Girdhari Lal, Assistant Professor, Dept. of AI & DS, PIET",
-      "Dr. Akash Saxena, Professor, Central University of Haryana, Mahendergarh",
-      "Dr. Arun Prakash, Professor, MNNIT, Allahabad",
-      "Dr. Mayank Pandey, Professor, MNNIT Allahabad",
-      "Dr. Raghuvendra Pal, Assistant Professor, VNIT, Surat",
-      "Dr. Himanshu Katiyar, Associate Professor, REC, Sonbhadra",
-      "Dr. Abhinav Gupta, Assistant Professor, REC, Sonbhadra",
-      "Dr. Nand Kishore, Assistant Professor, HBTI, Kanpur",
-      "Dr. Ankur Kumar, Assistant Professor, School of Electronics, IIIT Una",
-      "Dr. Nigam Garg, Assistant Professor, School of Electronics, IIIT Una",
-      "Dr. Mrityunjai Singh, Assistant Professor, School of Computing, IIIT Una",
-      "Mr. Swapnil Gaul, Founder and Director of Numeregion Technology",
-      "Mr. Prof. (Dr.) Madhu Shandilya, Professor, MANIT, Bhopal",
-      "Mr. Satyanshu Srivastava, HR Lead - Technical Trainings | Skill Development, Generative AI",
-      "Dr. Ashutosh Kumar, IIIT Allahabad",
-      "Ashish Kumar Tiwari, CEO and Founder - Feather Thread Corporation LLP",
-      "Dr. Kanad Ray, Professor, Amity University Rajasthan",
-      "Prof. Manish Tiwari, Professor, Department of ECE, School of Electrical and Electronics & Communication Engineering, Manipal University, Jaipur"
+      
+      
     ]
   },
   {
