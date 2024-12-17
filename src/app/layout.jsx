@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>ICRACS 2024</title>
+        <title>ICRACS 2025</title>
         <meta
           name="description"
           content="Welcome to the official website of ICRACS 2024"
