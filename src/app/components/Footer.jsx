@@ -1,5 +1,16 @@
 import Link from "next/link"
-import { Mail, MapPin, Phone, ExternalLink } from "lucide-react"
+import { Mail, MapPin, Phone, ExternalLink, GroupIcon, Users, User, Users2, UsersRound } from "lucide-react"
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 export default function Footer() {
   return (
@@ -69,13 +80,36 @@ export default function Footer() {
               className="group"
             >
               <p className="text-md mt-2 md:mt-0 font-bold relative flex items-center justify-center">
-                <span className="bg-gradient-to-r from-yellow-200 via-orange-300 to-white text-transparent bg-clip-text">
-                  Designed & Developed by
-                  <span className="underline decoration-yellow-300 hover:decoration-orange-400">
-                    The Cyborgs
+                <HoverCard>
+                  <HoverCardTrigger asChild>
+                  <span className="bg-gradient-to-r from-yellow-200 via-orange-300 to-white text-transparent bg-clip-text">
+                    Designed & Developed by <span className="underline decoration-yellow-300 hover:decoration-white">
+                      The Cyborgs
+                    </span>
                   </span>
-                </span>
-                <ExternalLink className="text-yellow-200 w-5 h-5 ml-1" />
+                  </HoverCardTrigger>
+                  <ExternalLink className="text-yellow-200 w-5 h-5 ml-1" />
+                  <HoverCardContent className="w-80">
+                    <div className="flex justify-between space-x-4">
+                      <Avatar>
+                        <AvatarImage src="https://creatorspace.imgix.net/users/clxfybnzn02xhmq01c7wimsnk/uHkRQhddbrxC0ABv-Cyborgs%2520logo%2520blbg.png?w=300&h=300" />
+                        <AvatarFallback>TC</AvatarFallback>
+                      </Avatar>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-semibold">@thecyborgs</h4>
+                        <p className="text-sm">
+                          A Tech Community – created and maintained by @kartikmehta18 & @thisissahaj
+                        </p>
+                        <div className="flex items-center pt-2">
+                          <UsersRound className="mr-2 h-4 w-4 opacity-70" />{" "}
+                          <span className="text-xs text-muted-foreground">
+                            1500+ tech enthusiasts
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>
               </p>
             </Link>
           </div>
