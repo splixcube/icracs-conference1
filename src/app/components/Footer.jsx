@@ -1,17 +1,5 @@
 import Link from "next/link"
-import { Mail, MapPin, Phone } from "lucide-react"
-import { ExternalLink } from 'lucide-react'
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
+import { Mail, MapPin, Phone, ExternalLink } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -81,46 +69,14 @@ export default function Footer() {
               className="group"
             >
               <p className="text-md mt-2 md:mt-0 font-bold relative flex items-center justify-center">
-                <HoverCard>
                 <span className="bg-gradient-to-r from-yellow-200 via-orange-300 to-white text-transparent bg-clip-text">
                   Designed & Developed by
-                  <HoverCardTrigger asChild>
                   <span className="underline decoration-yellow-300 hover:decoration-orange-400">
                     The Cyborgs
                   </span>
-                  </HoverCardTrigger>
                 </span>
                 <ExternalLink className="text-yellow-200 w-5 h-5 ml-1" />
-
-
-
-                  
-                  <HoverCardContent className="w-80">
-                    <div className="flex justify-between space-x-4">
-                      <Avatar>
-                        <AvatarImage src="https://creatorspace.imgix.net/users/clxfybnzn02xhmq01c7wimsnk/uHkRQhddbrxC0ABv-Cyborgs%2520logo%2520blbg.png?w=300&h=300" />
-                        <AvatarFallback>TC</AvatarFallback>
-                      </Avatar>
-                      <div className="space-y-1">
-                        <h4 className="text-sm font-semibold">@thecyborgs</h4>
-                        <p className="text-sm">
-                          A tech community – created and maintained by @kartik18 & @thisissahaj
-                        </p>
-                        <div className="flex items-center pt-2">
-                          <span className="text-xs text-muted-foreground">
-                            1500+ members
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </HoverCardContent>
-                </HoverCard>
-
-
               </p>
-
-
-
             </Link>
           </div>
           {/* <span className="absolute left-0 right-0 -bottom-1 h-0.5 bg-gradient-to-r from-yellow-300 to-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span> */}
