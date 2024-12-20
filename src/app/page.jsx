@@ -15,20 +15,6 @@ import Partners from '@/components/ui/partners';
 
 export default function LandingPage() {
 
-  const getSpeakersData = () => {
-    return [
-      {
-        id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/speaker.png?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
-      },
-
-
-      // Add more speakers as needed
-    ];
-  };
-
   return (
     <>  {/* Hero Section */}
       <section className="relative bg-blue-600 text-white py-8 sm:py-12 md:py-20 overflow-hidden">
@@ -41,12 +27,14 @@ export default function LandingPage() {
           <div className="circle small shade5"></div>
         </div> */}
 
+       
+
         {/* Main Content */}
         <div className="container relative z-10 mx-auto px-4 ">
           <div className="flex flex-col md:flex-row items-center md:gap-80">
             <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left">
-                2nd ICRACS
+                2ND ICRACS
               </h1>
               <p className="text-md sm:text-lg md:text-xl mb-6 text-center md:text-left">
                 International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems
@@ -58,7 +46,7 @@ export default function LandingPage() {
 
                 <div className="mt-8 space-y-4">
                   <div className="flex items-start gap-2">
-                    <img src="/location.png" className="h-4 w-4 mt-1"/>
+                    <img src="/location.png" className="h-4 w-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-white">Poornima Institute of Engineering and Technology</h3>
                       <p className="text-sm text-white">Sitapura Jaipur, Rajasthan</p>
@@ -77,7 +65,7 @@ export default function LandingPage() {
                       href="https://www.piet.poornima.org/">
                       <img src='/web.png' className="h-5 w-5" />
                     </Link>
-                   
+
                   </div>
                 </div>
 
@@ -100,9 +88,9 @@ export default function LandingPage() {
       <About2 />
       <Partners />
 
-     
 
-    
+
+
 
 
     </>

@@ -1,29 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card"
+import Partners from "@/components/ui/partners"
 import { CalendarDays } from 'lucide-react'
 
 const events = [
   {
-    date: "January 25, 2025",
+    date: "February 15, 2025",
     title: "Paper Submission",
   },
   {
-    date: "February 10, 2025",
+    date: "March 01, 2025",
     title: "Notification of Acceptance",
   },
   {
-    date: "February 20, 2025",
+    date: "March 10, 2025",
     title: "Camera Ready Paper",
   },
   {
-    date: "February 25, 2025",
+    date: "March 16, 2025",
     title: "Early Bird Registration",
   },
   {
-    date: "March 02, 2025",
+    date: "March 21, 2025",
     title: "Late Registration",
   },
   {
-    date: "March 07-08, 2025",
+    date: "April 14-15, 2025",
     title: "Conference Dates",
   },
 ]
@@ -58,6 +59,8 @@ export default function Component() {
           <p> <b> * All submissions will be reviewed on a rolling basis.</b></p>
         </div>
       </div>
+
+      <Partners />
     </div>
   )
 }

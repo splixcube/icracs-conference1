@@ -97,7 +97,7 @@ export default function Registration() {
             </ul>
             <div className="flex items-center space-x-2">
               <span className="font-semibold">CMT Link:</span>
-              <a href="https://cmt3.research.microsoft.com/ICRACS2024" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center">
+              <a href="https://icracs.poornima.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center">
                 ICRACS2025 <ExternalLink className="w-4 h-4 ml-1" />
               </a>
             </div>
@@ -131,8 +131,8 @@ export default function Registration() {
               <div className="mt-4 space-y-2">
                 <p>
                   <span className="font-medium">Visit:</span>{" "}
-                  <a href="http://convergence.poornima.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                    http://convergence.poornima.org
+                  <a href="http://icracs.poornima.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    http://icracs.poornima.org
                   </a>
                 </p>
                 <p>
