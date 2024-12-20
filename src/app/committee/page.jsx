@@ -8,7 +8,7 @@ const committeeData = [
     title: "Honorary Patron",
     members: [
       "Mr. Hari Singh Director (Infrastructure), Poornima Group, Jaipur",
-      "Mr. MKM Shah Director (Admin &amp; Finance), Poornima Group, Jaipur",
+      "Mr. MKM Shah Director (Admin &; Finance), Poornima Group, Jaipur",
     ]
   },
   {

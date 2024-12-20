@@ -1,5 +1,17 @@
 import Link from "next/link"
 import { Mail, MapPin, Phone } from "lucide-react"
+import { ExternalLink } from 'lucide-react'
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 export default function Footer() {
   return (
@@ -7,7 +19,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="space-y-4">
-          <h3 className="text-2xl font-bold">ICRACS</h3>
+            <h3 className="text-2xl font-bold">ICRACS</h3>
             <p className="text-blue-100">International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems</p>
             <p className="text-sm">Exploring the Future of Technology</p>
           </div>
@@ -19,7 +31,7 @@ export default function Footer() {
               <Link href="/importantdates" className="hover:underline text-blue-100">Important Dates</Link>
               <Link href="/uploadpaper" className="hover:underline text-blue-100">Upload Paper</Link>
               <a href="/samplepaper.pdf" download className="hover:underline text-blue-100">Sample Paper</a>
-             
+
             </nav>
           </div>
 
@@ -34,7 +46,7 @@ export default function Footer() {
                 <Mail className="w-5 h-5 mr-2" />
                 <a href="mailto:saurabh.raj@poornima.org" className="hover:underline">saurabh.raj@poornima.org</a>
               </p>
-              
+
               <p className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />
                 <span>Dr. Sandeep Gupta: 9887448137</span>
@@ -68,14 +80,50 @@ export default function Footer() {
               target="_blank"
               className="group"
             >
-              <p className="text-md mt-2 md:mt-0 font-bold relative">
+              <p className="text-md mt-2 md:mt-0 font-bold relative flex items-center justify-center">
+                <HoverCard>
                 <span className="bg-gradient-to-r from-yellow-200 via-orange-300 to-white text-transparent bg-clip-text">
-                  Design & Developed by The Cyborgs
+                  Designed & Developed by
+                  <HoverCardTrigger asChild>
+                  <span className="underline decoration-yellow-300 hover:decoration-orange-400">
+                    The Cyborgs
+                  </span>
+                  </HoverCardTrigger>
                 </span>
-                <span className="absolute left-0 right-0 -bottom-1 h-0.5 bg-gradient-to-r from-yellow-300 to-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <ExternalLink className="text-yellow-200 w-5 h-5 ml-1" />
+
+
+
+                  
+                  <HoverCardContent className="w-80">
+                    <div className="flex justify-between space-x-4">
+                      <Avatar>
+                        <AvatarImage src="https://creatorspace.imgix.net/users/clxfybnzn02xhmq01c7wimsnk/uHkRQhddbrxC0ABv-Cyborgs%2520logo%2520blbg.png?w=300&h=300" />
+                        <AvatarFallback>TC</AvatarFallback>
+                      </Avatar>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-semibold">@thecyborgs</h4>
+                        <p className="text-sm">
+                          A tech community – created and maintained by @kartik18 & @thisissahaj
+                        </p>
+                        <div className="flex items-center pt-2">
+                          <span className="text-xs text-muted-foreground">
+                            1500+ members
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>
+
+
               </p>
+
+
+
             </Link>
           </div>
+          {/* <span className="absolute left-0 right-0 -bottom-1 h-0.5 bg-gradient-to-r from-yellow-300 to-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span> */}
 
 
         </div>

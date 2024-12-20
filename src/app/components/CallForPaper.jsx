@@ -115,10 +115,10 @@ export default function CallForPaper() {
         <p className="text-xl text-center text-gray-700 mb-12">
           The topics of the conference include, but are not limited to:
         </p>
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        <Accordion type="single" collapsible className="w-full space-y-4 px-4">
           {tracks.map((track, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg overflow-hidden">
-              <AccordionTrigger className="text-xl font-semibold text-blue-700 p-4 bg-blue-50 hover:bg-blue-100 transition-colors">
+              <AccordionTrigger className="text-md md:text-xl lg:texl:xl text-left font-semibold text-blue-700 p-4 bg-blue-50 hover:bg-blue-100 transition-colors">
                 Track {index + 1}: {track.title}
               </AccordionTrigger>
               <AccordionContent className="p-4 bg-white">
