@@ -32,7 +32,7 @@ const committeeData = [
   {
     title: "Conference Chair",
     members: [
-      "Dr. Ravi kumar, Arya Director, Xiangshan Laboratory Wireless Group, Zhingshan Institute of Changchun University of Science and Technology, China",
+      "Dr. Ravi Kumar Arya ,Director, Xiangshan Laboratory Wireless Group, Zhingshan Institute of Changchun University of Science and Technology, China",
       "Dr. Budesh Kanwar, HOD Department of AI & DS, PIET",
     ]
   },
