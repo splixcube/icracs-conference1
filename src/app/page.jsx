@@ -34,7 +34,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row items-center md:gap-80">
             <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left">
-                2ND ICRACS
+                2<sup>nd</sup> ICRACS
               </h1>
               <p className="text-md sm:text-lg md:text-xl mb-6 text-center md:text-left">
                 International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems
