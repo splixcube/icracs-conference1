@@ -40,9 +40,11 @@ export default function LandingPage() {
                 International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems
               </p>
               <div className="justify-center md:justify-start">
+                <Link href={'https://cmt3.research.microsoft.com/ICRACS2025/Submission/Index'}>
                 <Button size="lg" className="w-full md:w-auto bg-white text-blue-600 hover:bg-blue-100">
                   Register Now
                 </Button>
+                </Link>
 
                 <div className="mt-8 space-y-4">
                   <div className="flex items-start gap-2">
