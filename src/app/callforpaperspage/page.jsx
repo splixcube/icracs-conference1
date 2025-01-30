@@ -35,7 +35,7 @@ export default function Speaker() {
             </ul>
             <div className="flex items-center space-x-2">
               <span className="font-semibold">CMT Link:</span>
-              <a href="https://icracs.poornima.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center">
+              <a href="https://cmt3.research.microsoft.com/ICRACS2025/Submission/Index" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center">
                 ICRACS2025 <ExternalLink className="w-4 h-4 ml-1" />
               </a>
             </div>

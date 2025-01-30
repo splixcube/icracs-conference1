@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">ICRACS</h3>
-            <p className="text-blue-100">* The <a href="https://cmt3.research.microsoft.com/" className="underline"> Microsoft CMT </a> service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support</p>
+            <p className="text-blue-100">* The <a href="https://cmt3.research.microsoft.com/ICRACS2025/Submission/Index" className="underline"> Microsoft CMT </a> service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support</p>
             {/* <p className="text-sm">Exploring the Future </p> */}
           </div>
 
@@ -28,7 +28,6 @@ export default function Footer() {
             <nav className="flex flex-col space-y-2">
               <Link href="/registration" className="hover:underline text-blue-100">Registration</Link>
               <Link href="/importantdates" className="hover:underline text-blue-100">Important Dates</Link>
-              <Link href="/uploadpaper" className="hover:underline text-blue-100">Upload Paper</Link>
               <a href="/samplepaper.pdf" download className="hover:underline text-blue-100">Sample Paper</a>
 
             </nav>
