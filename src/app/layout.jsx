@@ -37,7 +37,7 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title: "ICRACS 2025",
       description: "Welcome to the official website of ICRACS 2025",
-      image: "https://icracs.poornima.org/images/icracs-og.png",
+      image: "https://icracs.poornima.org/icracs-og.png",
     },
   };
 }
