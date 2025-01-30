@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 import React from "react";
 import "slick-carousel/slick/slick.css";
@@ -7,18 +5,46 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
+export async function generateMetadata() {
+  return {
+    title: "ICRACS 2025",
+    description: "Welcome to the official website of ICRACS 2025",
+    keywords: [
+      "icracs",
+      "icracs 2025",
+      "poornima",
+      "poornima jaipur",
+      "icracs poornima",
+      "piet college",
+      "piet jaipur",
+      "poornima conference",
+      "piet conference",
+    ],
+    openGraph: {
+      title: "ICRACS 2025",
+      description: "Welcome to the official website of ICRACS 2025",
+      url: "https://icracs.poornima.org/",
+      images: [
+        {
+          url: "https://icracs.poornima.org/images/icracs-og.png",
+          alt: "ICRACS 2025",
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "ICRACS 2025",
+      description: "Welcome to the official website of ICRACS 2025",
+      image: "https://icracs.poornima.org/images/icracs-og.png",
+    },
+  };
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <title>ICRACS 2025</title>
-        <meta
-          name="description"
-          content="Welcome to the official website of ICRACS 2024"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body>
         <div className="flex flex-col min-h-screen">
           <Header />
