@@ -26,7 +26,7 @@ export async function generateMetadata() {
       url: "https://icracs.poornima.org/",
       images: [
         {
-          url: "https://icracs.poornima.org/images/icracs-og.png",
+          url: "https://icracs.poornima.org/icracs-og.png",
           alt: "ICRACS 2025",
           width: 1200,
           height: 630,
