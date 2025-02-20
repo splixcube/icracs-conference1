@@ -8,7 +8,7 @@ const committeeData = [
     title: "Honorary Patron",
     members: [
       "Mr. Hari Singh Director (Infrastructure), Poornima Group, Jaipur",
-      "Mr. MKM Shah Director (Admin &; Finance), Poornima Group, Jaipur",
+      "Mr. MKM Shah Director (Admin & Finance), Poornima Group, Jaipur",
     ]
   },
   {
@@ -20,27 +20,21 @@ const committeeData = [
   {
     title: "General Chair",
     members: [
-      "Dr. Dinesh Goyal, Principal & Director, PIET",
+      "Prof. (Dr.) Dinesh Goyal, Principal & Director, PIET",
     ]
   },
-  // {
-  //   title: "Co-patron",
-  //   members: [
-  //     "Dr. Gautam Singh, Registrar, PIET",
-  //   ]
-  // },
   {
     title: "Conference Chair",
     members: [
-      "Dr. Ravi Kumar Arya ,Director, Xiangshan Laboratory Wireless Group, Zhingshan Institute of Changchun University of Science and Technology, China",
-      "Dr. Budesh Kanwar, HOD Department of AI & DS, PIET",
+      "Prof. (Dr.) Ravi Kumar Arya ,Director, Xiangshan Laboratory Wireless Group, Zhingshan Institute of Changchun University of Science and Technology, China",
+      "Prof. (Dr.) Budesh Kanwar, HOD Department of AI & DS, PIET",
     ]
   },
   {
     title: "Conference Co-Chair",
     members: [
       "Ms.Alka Rani, Dy. HOD (Academics) Dept. of AI & DS, PIET",
-      "Dr. Uday Pratap, Singh Dy. HOD (Admin) Dept. of AI & DS, PIET",
+      "Dr. Uday Pratap Singh, Dy. HOD (Admin) Dept. of AI & DS, PIET",
     ]
   },
   {
@@ -51,12 +45,12 @@ const committeeData = [
     ]
   },
   {
-    title: "TPC Chair",
+    title: "Technical Program Committee",
     members: [
       "Dr. Atulya Nagar, Pro Vice Chancellor for Research, Liverpool Hope University",
       "Dr. Shatraghun Modi, Assistant Professor, School of Computing, IIIT Una",
       "Dr. Ajay Maurya, Professor, Dept. of AI & DS, PIET",
-      "Dr. Saurabh Raj, Associate Professor Department of AI &amp; DS, PIET",
+      "Dr. Saurabh Raj, Associate Professor, Dept. of AI & DS, PIET",
       "Prof. Narendra S. Chaudhari, Professor, Assam science and Technology University - ASTU(Government of Assam), Guwahati",
     ]
   },
@@ -100,7 +94,7 @@ const committeeData = [
       "Mr. Dinesh Kumar Reddy Basani, CGI, British Columbia, Canada",
       "Dr. Eduardo Lugo, Visual Psychophysics and Perception Laboratory, School of Optometry, University of Montreal, Canada",
       "Prof. (Dr.) Badrul Hisham Bin Ahmad, Professor, Universiti Teknikal Malaysia Melaka",
-      "Dr Rajkumar Singh Rathore,  Department of Computer Science Cardiff School of Technologies, Llandaff Campus"
+      "Dr. Rajkumar Singh Rathore,  Department of Computer Science Cardiff School of Technologies, Llandaff Campus"
     ]
   },
   {

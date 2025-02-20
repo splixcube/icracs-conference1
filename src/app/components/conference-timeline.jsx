@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const timelineEvents = [
   {
-    date: "February 15, 2025",
+    date: "February 28, 2025",
     title: "Paper Submission",
   },
   {
