@@ -4,11 +4,11 @@ import { CalendarDays } from 'lucide-react'
 
 const events = [
   {
-    date: "February 15, 2025",
+    date: "March 01, 2025",
     title: "Paper Submission",
   },
   {
-    date: "March 01, 2025",
+    date: "March 05, 2025",
     title: "Notification of Acceptance",
   },
   {

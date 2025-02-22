@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const timelineEvents = [
   {
-    date: "February 28, 2025",
+    date: "March 01, 2025",
     title: "Paper Submission",
   },
   {
-    date: "March 01, 2025",
+    date: "March 05, 2025",
     title: "Notification of Acceptance",
   },
   {
