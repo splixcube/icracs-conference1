@@ -13,22 +13,22 @@ const categories = [
   },
   {
     category: "UG Student Author (Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹4000",
-    afterDeadline: "₹5000",
-  },
-  {
-    category: "UG Student Author (Non-Member- ACM/ISTE/IEEE/FIP)",
     publicationCharge: "₹5000",
     afterDeadline: "₹6000",
   },
   {
-    category: "Post Graduate Scholar Author (Member- ACM/ISTE/IEEE/FIP)",
+    category: "UG Student Author (Non-Member- ACM/ISTE/IEEE/FIP)",
     publicationCharge: "₹6000",
     afterDeadline: "₹7000",
   },
   {
-    category: "Post Graduate Scholar Author (Non-Member- ACM/ISTE/IEEE/FIP)",
+    category: "Post Graduate Scholar Author (Member- ACM/ISTE/IEEE/FIP)",
     publicationCharge: "₹7000",
+    afterDeadline: "₹8000",
+  },
+  {
+    category: "Post Graduate Scholar Author (Non-Member- ACM/ISTE/IEEE/FIP)",
+    publicationCharge: "₹8000",
     afterDeadline: "₹9000",
   },
   {
