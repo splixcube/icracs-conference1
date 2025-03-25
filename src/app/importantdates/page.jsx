@@ -24,7 +24,7 @@ const events = [
     title: "Late Registration",
   },
   {
-    date: "April 14-15, 2025",
+    date: "April 16-17, 2025",
     title: "Conference Dates",
   },
 ]
