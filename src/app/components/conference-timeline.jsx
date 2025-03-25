@@ -3,20 +3,28 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const timelineEvents = [
   {
-    date: "March 31, 2025 (Extended)",
+    oldDate: "February 15, 2025",
+    date: "March 31, 2025",
     title: "Paper Submission",
   },
   {
-    date: " April 5, 2025",
+    oldDate: "March 01, 2025",
+    date: "April 01, 2025",
     title: "Notification of Acceptance",
   },
   {
-    date: " April 10, 2025",
-    title: "Registration Deadline",
+    oldDate: "March 16, 2025",
+    date: " April 03, 2025",
+    title: "Early Bird Registration",
   },
   {
-    date: "April 15, 2025",
-    title: "Camera Ready Submission",
+    oldDate: "March 21, 2025",
+    date: " April 07, 2025",
+    title: "Late Registration",
+  },
+  {
+    date: "April 10, 2025",
+    title: "Revised Paper Submission (If Applicable)",
   },
   {
     date: "April 16-17, 2025",
@@ -45,8 +53,9 @@ export function ConferenceTimeline() {
                       <img src='/calendar.png' className="h-4 w-4" />
 
                     </div>
-                    <Card className="w-56 h-28 text-center">
+                    <Card className="w-56 h-30 text-center">
                       <CardContent className="p-4">
+                        <p className="font-semibold text-gray-400 line-through">{event.oldDate}</p>
                         <p className="font-semibold text-blue-600">{event.date}</p>
                         <h3 className="font-bold mt-2">{event.title}</h3>
                         {/* <p className="text-sm text-gray-600 mt-1">{event.description}</p> */}

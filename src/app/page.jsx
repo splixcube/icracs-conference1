@@ -18,17 +18,7 @@ export default function LandingPage() {
   return (
     <>  {/* Hero Section */}
       <section className="relative bg-blue-600 text-white py-8 sm:py-12 md:py-20 overflow-hidden">
-        {/* Ripple Background Animation */}
-        {/* <div className="ripple-background">
-          <div className="circle xxlarge shade1"></div>
-          <div className="circle xlarge shade2"></div>
-          <div className="circle large shade3"></div>
-          <div className="circle medium shade4"></div>
-          <div className="circle small shade5"></div>
-        </div> */}
-
        
-
         {/* Main Content */}
         <div className="container relative z-10 mx-auto px-4 ">
           <div className="flex flex-col md:flex-row items-center md:gap-80">
@@ -49,10 +39,12 @@ export default function LandingPage() {
                 <div className="mt-8 space-y-4">
                   <div className="flex items-start gap-2">
                     <img src="/location.png" className="h-4 w-4 mt-1" />
+                    <Link href="https://maps.app.goo.gl/T3kv2EAkiqj6H23F8" target='_blank'>
                     <div>
                       <h3 className="font-semibold text-white">Poornima Institute of Engineering and Technology</h3>
                       <p className="text-sm text-white">Sitapura Jaipur, Rajasthan</p>
                     </div>
+                    </Link>
                   </div>
                   <div className="flex gap-4">
                     <Link
@@ -89,12 +81,6 @@ export default function LandingPage() {
       <About1 />
       <About2 />
       <Partners />
-
-
-
-
-
-
     </>
   );
 }
