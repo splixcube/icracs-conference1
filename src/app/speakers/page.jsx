@@ -75,13 +75,13 @@ export default function Speaker() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-slate-50">
+      <section className="py-10 md:py-20  bg-slate-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">PAST SPEAKERS</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8">
+          <div className=" flex flex-col items-center justify-center ">
             {getPastSpeakersData().map((speaker) => (
               <Card key={speaker.id}>
-                <CardContent className="p-4 md:p-6 text-center hover:border border-blue-500 rounded-md">
+                <CardContent className="  p-4 md:p-6 text-center hover:border border-blue-500 rounded-md">
                   <Image
                     src={speaker.image}
                     alt={`Speaker ${speaker.id}`}

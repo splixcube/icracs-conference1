@@ -12,17 +12,17 @@ const events = [
     title: "Notification of Acceptance",
   },
   {
-    date: "March 10, 2025",
-    title: "Camera Ready Paper",
+    date: "April 15, 2025",
+    title: "Camera Ready Submission",
   },
-  {
-    date: "March 16, 2025",
-    title: "Early Bird Registration",
-  },
-  {
-    date: "March 21, 2025",
-    title: "Late Registration",
-  },
+  // {
+  //   date: "March 16, 2025",
+  //   title: "Early Bird Registration",
+  // },
+  // {
+  //   date: "March 21, 2025",
+  //   title: "Late Registration",
+  // },
   {
     date: "April 16-17, 2025",
     title: "Conference Dates",
