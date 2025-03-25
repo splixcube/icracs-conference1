@@ -10,42 +10,21 @@ export default function SpecialEvent() {
     return [
       {
         id: 1,
-        name: "Dr. Vijayshri Chaurasiya",
-        image: "/speakerimg/VijayshriChaurasiya2.jpg?height=150&width=150",
-        role: "Associate Professor, MANIT, Bhopal",
+        name: "Dr. Kiruthika M",
+        image: "/speakerimg/KiruthikaM.jpg?height=150&width=150",
+        role: " Department of Computational Intelligence, Faculty of Engineering & Technology, Kattankulathur - Chennai",
       },
-      {
-        id: 2,
-        name: "Prof.(Dr.) Sandeep Saxena",
-        image: "/speakerimg/SandeepSaxena.jpg?height=150&width=150",
-        role: "Professor &amp; Head, JIMS Greater Noida, Senior Member IEEE, Keynote Speaker/Associate Editor/Resource Person",
-      },
+      // {
+      //   id: 2,
+      //   name: "Prof.(Dr.) Sandeep Saxena",
+      //   image: "/speakerimg/SandeepSaxena.jpg?height=150&width=150",
+      //   role: "Professor &amp; Head, JIMS Greater Noida, Senior Member IEEE, Keynote Speaker/Associate Editor/Resource Person",
+      // },
       
     ];
   };
  
-  const getPastSpeakersData = () => {
-    return [
-      {
-        id: 1,
-        name: "Dr. Akash Saxena",
-        image: "/speakerimg/akashsaxena.png?height=150&width=150",
-        role: "Central University of Haryana, Mahendergarh",
-      },
-      // {
-      //   id: 2,
-      //   name: "Dr. Vijayshri Chaurasiya",
-      //   image: "/speakerimg/speaker.png?height=150&width=150",
-      //   role: "Associate Professor, MANIT, Bhopal",
-      // },
-      // {
-      //   id: 3,
-      //   name: "Dr. Vijayshri Chaurasiya",
-      //   image: "/speakerimg/speaker.png?height=150&width=150",
-      //   role: "Associate Professor, MANIT, Bhopal",
-      // },
-    ];
-  };
+ 
   return (
 
     <div>
