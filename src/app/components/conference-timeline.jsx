@@ -3,24 +3,24 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const timelineEvents = [
   {
-    date: "March 01, 2025",
+    date: "March 31, 2025 (Extended)",
     title: "Paper Submission",
   },
-  {
-    date: "March 05, 2025",
-    title: "Notification of Acceptance",
-  },
-  {
-    date: "March 10, 2025",
-    title: "Camera Ready Paper",
-  },
-  {
+    {
     date: "March 16, 2025",
     title: "Early Bird Registration",
   },
   {
     date: "March 21, 2025",
     title: "Late Registration",
+  },
+  {
+    date: " April 5, 2025",
+    title: "Notification of Acceptance",
+  },
+  {
+    date: "April 15, 2025",
+    title: "Camera Ready Submission",
   },
   {
     date: "April 16-17, 2025",
@@ -41,12 +41,12 @@ export function ConferenceTimeline() {
             <div className="relative" style={{ width: `${timelineEvents.length * 250}px` }}>
               {/* Horizontal line */}
               <div className="absolute top-1/2 left-0 w-full h-1 bg-blue-200 transform -translate-y-1/2"></div>
-              
+
               <div className="relative z-10 flex justify-between">
                 {timelineEvents.map((event, index) => (
                   <div key={index} className="flex flex-col items-center w-64">
                     <div className="w-8 h-8 bg-blue-600 rounded-full mb-2 flex items-center justify-center">
-                    <img src='/calendar.png' className="h-4 w-4" />
+                      <img src='/calendar.png' className="h-4 w-4" />
 
                     </div>
                     <Card className="w-56 h-28 text-center">
