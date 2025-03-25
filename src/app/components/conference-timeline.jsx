@@ -6,17 +6,13 @@ const timelineEvents = [
     date: "March 31, 2025 (Extended)",
     title: "Paper Submission",
   },
-    {
-    date: "March 16, 2025",
-    title: "Early Bird Registration",
-  },
-  {
-    date: "March 21, 2025",
-    title: "Late Registration",
-  },
   {
     date: " April 5, 2025",
     title: "Notification of Acceptance",
+  },
+  {
+    date: " April 10, 2025",
+    title: "Registration Deadline",
   },
   {
     date: "April 15, 2025",
