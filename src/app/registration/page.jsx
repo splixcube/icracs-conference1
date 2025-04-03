@@ -8,52 +8,52 @@ import Partners from "@/components/ui/partners";
 const categories = [
   {
     category: "Attendee",
-    publicationCharge: "₹1500",
+    registrationFee: "₹1500",
     afterDeadline: "₹2500",
   },
   {
     category: "UG Student Author (Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹5000",
+    registrationFee: "₹5000",
     afterDeadline: "₹6000",
   },
   {
     category: "UG Student Author (Non-Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹6000",
+    registrationFee: "₹6000",
     afterDeadline: "₹7000",
   },
   {
     category: "Post Graduate Scholar Author (Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹7000",
+    registrationFee: "₹7000",
     afterDeadline: "₹8000",
   },
   {
     category: "Post Graduate Scholar Author (Non-Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹8000",
+    registrationFee: "₹8000",
     afterDeadline: "₹9000",
   },
   {
     category: "Author-Faculty or Research Scholars (Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹9000",
+    registrationFee: "₹9000",
     afterDeadline: "₹11,000",
   },
   {
     category: "Author-Faculty or Research Scholars (Non-Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "₹10,000",
+    registrationFee: "₹10,000",
     afterDeadline: "₹12,000",
   },
   {
     category: "Corporate/Industry Professional",
-    publicationCharge: "₹11,000",
+    registrationFee: "₹11,000",
     afterDeadline: "₹13,000",
   },
   {
     category: "Foreign Delegate (Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "$180",
+    registrationFee: "$180",
     afterDeadline: "$200",
   },
   {
     category: "Foreign Delegate (Non-Member- ACM/ISTE/IEEE/FIP)",
-    publicationCharge: "$220",
+    registrationFee: "$220",
     afterDeadline: "$250",
   },
 ];
@@ -162,7 +162,7 @@ export default function Registration() {
               <TableHeader>
                 <TableRow className="bg-blue-100">
                   <TableHead className="w-[50%] font-bold text-blue-700">Category</TableHead>
-                  <TableHead className="text-right font-bold text-blue-700">Publication Charge</TableHead>
+                  <TableHead className="text-right font-bold text-blue-700">Registration Fee</TableHead>
                   <TableHead className="text-right font-bold text-blue-700">After Deadline</TableHead>
                 </TableRow>
               </TableHeader>
@@ -170,7 +170,7 @@ export default function Registration() {
                 {categories.map((category, index) => (
                   <TableRow key={index} className={index % 2 === 0 ? "bg-white" : "bg-blue-50"}>
                     <TableCell className="font-medium">{category.category}</TableCell>
-                    <TableCell className="text-right">{category.publicationCharge}</TableCell>
+                    <TableCell className="text-right">{category.registrationFee}</TableCell>
                     <TableCell className="text-right">{category.afterDeadline}</TableCell>
                   </TableRow>
                 ))}
