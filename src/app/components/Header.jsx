@@ -73,11 +73,11 @@ function Header() {
                                 Speakers
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="/specialEvents" className="text-blue-600 hover:text-blue-800">
                                 Special Sessions
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link href="/archieve" className="text-blue-600 hover:text-blue-800">
                                 Archieve
