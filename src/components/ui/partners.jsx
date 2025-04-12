@@ -10,9 +10,9 @@ function Partners() {
                     <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">OUR PUBLICATION PARTNERS</h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-4">
                         <Card>
-                            <CardContent className="p-4 md:p-6 gap-4 flex flex-col justify-center items-center">
-                                <Image src={'/partners/tarupublications.jpeg'} width={200} height={200} />
-                                <h1 className='font-bold text-sm md:text-xl lg:text-xl'>TARU PUBLICATIONS <span className='text-red-500'>*</span></h1>
+                            <CardContent className="p-4 mt-10 md:p-6 gap-4 flex flex-col justify-center items-center">
+                                <Image src={'/partners/AIP.png'} className='mb-6' width={400} height={400} />
+                                <h1 className='font-bold text-sm md:text-xl lg:text-xl'>AIP CONFERENCE PROCEEDINGS<span className='text-red-500'>*</span></h1>
                             </CardContent>
                         </Card>
                         <Card>
