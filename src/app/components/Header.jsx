@@ -59,6 +59,11 @@ function Header() {
                             </Link>
                         </li>
                         <li>
+                            <Link href="https://drive.google.com/file/d/13-6VwOojlGyKKFBTTGSr9JJI8ha73jM1/view?usp=drivesdk" target="_blank" className="text-blue-600 hover:text-blue-800">
+                                Agenda
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/registration" className="text-blue-600 hover:text-blue-800">
                                 Registration
                             </Link>
