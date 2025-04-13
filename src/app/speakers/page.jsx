@@ -10,18 +10,24 @@ export default function Speaker() {
     return [
       {
         id: 1,
+        name: "Prof. (Dr.) Ravi Kumar Arya",
+        image: "/speakerimg/ravikumar.jpg?height=150&width=150",
+        role: "Professor, Zhingshan Institute of Changchun University of Science and Technology, China ",
+      },
+      {
+        id: 2,
         name: "Dr. Ankit Agrawal",
         image: "/speakerimg/AnkitAgrawal.jpg?height=150&width=150",
         role: "Research Professor, Department of Electrical and Computer Engineering McCormick School of Engineering and Applied Science Northwestern University",
       },
       {
-        id: 2,
+        id: 3,
         name: "Dr. Vijayshri Chaurasiya",
         image: "/speakerimg/VijayshriChaurasiya2.jpg?height=150&width=150",
         role: "Associate Professor, Maulana Azad National Institute of Technology, Bhopal",
       },
       {
-        id: 3,
+        id: 4,
         name: "Prof.(Dr.) Sandeep Saxena",
         image: "/speakerimg/SandeepSaxena.jpg?height=150&width=150",
         role: "Professor & Head, JIMS Greater Noida, Senior Member IEEE, Keynote Speaker/Associate Editor/Resource Person",
@@ -61,7 +67,7 @@ export default function Speaker() {
       <section className="py-12 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-blue-600">KEYNOTE SPEAKERS</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 md:gap-8 md:mx-30">
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-4 md:gap-8 md:mx-30">
             {getSpeakersData().map((speaker) => (
               <Card key={speaker.id}>
                 <CardContent className="p-4 md:p-6 text-center hover:border border-blue-500 rounded-md">
